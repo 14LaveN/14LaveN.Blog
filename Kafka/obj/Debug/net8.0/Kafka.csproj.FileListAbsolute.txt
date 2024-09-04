@@ -1,0 +1,11 @@
+G:\DotNetProjects\14LaveN.Blog\Kafka\bin\Debug\net8.0\Kafka.deps.json
+G:\DotNetProjects\14LaveN.Blog\Kafka\bin\Debug\net8.0\Kafka.dll
+G:\DotNetProjects\14LaveN.Blog\Kafka\bin\Debug\net8.0\Kafka.pdb
+G:\DotNetProjects\14LaveN.Blog\Kafka\obj\Debug\net8.0\Kafka.GeneratedMSBuildEditorConfig.editorconfig
+G:\DotNetProjects\14LaveN.Blog\Kafka\obj\Debug\net8.0\Kafka.AssemblyInfoInputs.cache
+G:\DotNetProjects\14LaveN.Blog\Kafka\obj\Debug\net8.0\Kafka.AssemblyInfo.cs
+G:\DotNetProjects\14LaveN.Blog\Kafka\obj\Debug\net8.0\Kafka.csproj.CoreCompileInputs.cache
+G:\DotNetProjects\14LaveN.Blog\Kafka\obj\Debug\net8.0\Kafka.dll
+G:\DotNetProjects\14LaveN.Blog\Kafka\obj\Debug\net8.0\refint\Kafka.dll
+G:\DotNetProjects\14LaveN.Blog\Kafka\obj\Debug\net8.0\Kafka.pdb
+G:\DotNetProjects\14LaveN.Blog\Kafka\obj\Debug\net8.0\ref\Kafka.dll

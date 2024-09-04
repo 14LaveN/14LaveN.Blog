@@ -1,0 +1,12 @@
+﻿services:
+  blog:
+    image: blog
+    build:
+      context: .
+      dockerfile: Blog/Dockerfile
+
+  articleapi:
+    image: articleapi
+    build:
+      context: .
+      dockerfile: ArticleAPI/Dockerfile

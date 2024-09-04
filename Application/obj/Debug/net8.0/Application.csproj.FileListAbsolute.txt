@@ -1,0 +1,15 @@
+G:\DotNetProjects\14LaveN.Blog\Application\bin\Debug\net8.0\Application.deps.json
+G:\DotNetProjects\14LaveN.Blog\Application\bin\Debug\net8.0\Application.dll
+G:\DotNetProjects\14LaveN.Blog\Application\bin\Debug\net8.0\Application.pdb
+G:\DotNetProjects\14LaveN.Blog\Application\bin\Debug\net8.0\Domain.dll
+G:\DotNetProjects\14LaveN.Blog\Application\bin\Debug\net8.0\Domain.pdb
+G:\DotNetProjects\14LaveN.Blog\Application\obj\Debug\net8.0\Application.csproj.AssemblyReference.cache
+G:\DotNetProjects\14LaveN.Blog\Application\obj\Debug\net8.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+G:\DotNetProjects\14LaveN.Blog\Application\obj\Debug\net8.0\Application.AssemblyInfoInputs.cache
+G:\DotNetProjects\14LaveN.Blog\Application\obj\Debug\net8.0\Application.AssemblyInfo.cs
+G:\DotNetProjects\14LaveN.Blog\Application\obj\Debug\net8.0\Application.csproj.CoreCompileInputs.cache
+G:\DotNetProjects\14LaveN.Blog\Application\obj\Debug\net8.0\Application.csproj.CopyComplete
+G:\DotNetProjects\14LaveN.Blog\Application\obj\Debug\net8.0\Application.dll
+G:\DotNetProjects\14LaveN.Blog\Application\obj\Debug\net8.0\refint\Application.dll
+G:\DotNetProjects\14LaveN.Blog\Application\obj\Debug\net8.0\Application.pdb
+G:\DotNetProjects\14LaveN.Blog\Application\obj\Debug\net8.0\ref\Application.dll

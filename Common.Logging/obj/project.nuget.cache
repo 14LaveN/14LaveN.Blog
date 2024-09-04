@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "dgSpecHash": "RnNnu/GZ+2tEbHdBAztJCOXW94YSvDSxemp52pkp+GMG504G/s+5rO5TFrO5LlvwFm/yRmh5pIjvixyybRA4FA==",
+  "success": true,
+  "projectFilePath": "G:\\DotNetProjects\\14LaveN.Blog\\Common.Logging\\Common.Logging.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ponom\\.nuget\\packages\\elasticsearch.net\\7.17.5\\elasticsearch.net.7.17.5.nupkg.sha512",
+    "C:\\Users\\ponom\\.nuget\\packages\\microsoft.csharp\\4.6.0\\microsoft.csharp.4.6.0.nupkg.sha512",
+    "C:\\Users\\ponom\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\ponom\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
+    "C:\\Users\\ponom\\.nuget\\packages\\serilog\\4.0.2-dev-02226\\serilog.4.0.2-dev-02226.nupkg.sha512",
+    "C:\\Users\\ponom\\.nuget\\packages\\serilog.exceptions\\8.4.0\\serilog.exceptions.8.4.0.nupkg.sha512",
+    "C:\\Users\\ponom\\.nuget\\packages\\serilog.formatting.compact\\2.0.0\\serilog.formatting.compact.2.0.0.nupkg.sha512",
+    "C:\\Users\\ponom\\.nuget\\packages\\serilog.formatting.elasticsearch\\10.0.0\\serilog.formatting.elasticsearch.10.0.0.nupkg.sha512",
+    "C:\\Users\\ponom\\.nuget\\packages\\serilog.sinks.console\\6.0.0\\serilog.sinks.console.6.0.0.nupkg.sha512",
+    "C:\\Users\\ponom\\.nuget\\packages\\serilog.sinks.elasticsearch\\10.0.0\\serilog.sinks.elasticsearch.10.0.0.nupkg.sha512",
+    "C:\\Users\\ponom\\.nuget\\packages\\serilog.sinks.file\\5.0.0\\serilog.sinks.file.5.0.0.nupkg.sha512",
+    "C:\\Users\\ponom\\.nuget\\packages\\serilog.sinks.periodicbatching\\4.0.0\\serilog.sinks.periodicbatching.4.0.0.nupkg.sha512",
+    "C:\\Users\\ponom\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+    "C:\\Users\\ponom\\.nuget\\packages\\system.diagnostics.diagnosticsource\\7.0.2\\system.diagnostics.diagnosticsource.7.0.2.nupkg.sha512",
+    "C:\\Users\\ponom\\.nuget\\packages\\system.reflection.typeextensions\\4.7.0\\system.reflection.typeextensions.4.7.0.nupkg.sha512",
+    "C:\\Users\\ponom\\.nuget\\packages\\system.threading.channels\\8.0.0\\system.threading.channels.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

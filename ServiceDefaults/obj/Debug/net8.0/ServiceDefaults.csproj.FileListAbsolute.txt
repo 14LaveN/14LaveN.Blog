@@ -1,0 +1,5 @@
+G:\DotNetProjects\14LaveN.Blog\ServiceDefaults\obj\Debug\net8.0\ServiceDefaults.csproj.AssemblyReference.cache
+G:\DotNetProjects\14LaveN.Blog\ServiceDefaults\obj\Debug\net8.0\ServiceDefaults.GeneratedMSBuildEditorConfig.editorconfig
+G:\DotNetProjects\14LaveN.Blog\ServiceDefaults\obj\Debug\net8.0\ServiceDefaults.AssemblyInfoInputs.cache
+G:\DotNetProjects\14LaveN.Blog\ServiceDefaults\obj\Debug\net8.0\ServiceDefaults.AssemblyInfo.cs
+G:\DotNetProjects\14LaveN.Blog\ServiceDefaults\obj\Debug\net8.0\ServiceDefaults.csproj.CoreCompileInputs.cache

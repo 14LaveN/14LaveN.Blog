@@ -1,0 +1,5 @@
+G:\DotNetProjects\14LaveN.Blog\Persistence\obj\Debug\net8.0\Persistence.csproj.AssemblyReference.cache
+G:\DotNetProjects\14LaveN.Blog\Persistence\obj\Debug\net8.0\Persistence.GeneratedMSBuildEditorConfig.editorconfig
+G:\DotNetProjects\14LaveN.Blog\Persistence\obj\Debug\net8.0\Persistence.AssemblyInfoInputs.cache
+G:\DotNetProjects\14LaveN.Blog\Persistence\obj\Debug\net8.0\Persistence.AssemblyInfo.cs
+G:\DotNetProjects\14LaveN.Blog\Persistence\obj\Debug\net8.0\Persistence.csproj.CoreCompileInputs.cache
