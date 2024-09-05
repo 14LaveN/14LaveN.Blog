@@ -36,8 +36,13 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Application\" />
-      <Folder Include="Contracts\" />
+      <Folder Include="Apis\" />
+      <Folder Include="Application\Commands\" />
+      <Folder Include="Application\Queries\" />
+      <Folder Include="Contracts\Create\" />
+      <Folder Include="Contracts\Delete\" />
+      <Folder Include="Contracts\GetById\" />
+      <Folder Include="Contracts\Update\" />
     </ItemGroup>
 
 </Project>
