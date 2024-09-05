@@ -32,3 +32,4 @@ G:\DotNetProjects\14LaveN.Blog\Blog\obj\Debug\net8.0\refint\Blog.dll
 G:\DotNetProjects\14LaveN.Blog\Blog\obj\Debug\net8.0\Blog.pdb
 G:\DotNetProjects\14LaveN.Blog\Blog\obj\Debug\net8.0\Blog.genruntimeconfig.cache
 G:\DotNetProjects\14LaveN.Blog\Blog\obj\Debug\net8.0\ref\Blog.dll
+G:\DotNetProjects\14LaveN.Blog\Blog\obj\Debug\net8.0\Blog.sourcelink.json

@@ -13,3 +13,4 @@ G:\DotNetProjects\14LaveN.Blog\Application\obj\Debug\net8.0\Application.dll
 G:\DotNetProjects\14LaveN.Blog\Application\obj\Debug\net8.0\refint\Application.dll
 G:\DotNetProjects\14LaveN.Blog\Application\obj\Debug\net8.0\Application.pdb
 G:\DotNetProjects\14LaveN.Blog\Application\obj\Debug\net8.0\ref\Application.dll
+G:\DotNetProjects\14LaveN.Blog\Application\obj\Debug\net8.0\Application.sourcelink.json

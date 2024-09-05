@@ -17,3 +17,4 @@ G:\DotNetProjects\14LaveN.Blog\BackgroundTasks\obj\Debug\net8.0\BackgroundTasks.
 G:\DotNetProjects\14LaveN.Blog\BackgroundTasks\obj\Debug\net8.0\refint\BackgroundTasks.dll
 G:\DotNetProjects\14LaveN.Blog\BackgroundTasks\obj\Debug\net8.0\BackgroundTasks.pdb
 G:\DotNetProjects\14LaveN.Blog\BackgroundTasks\obj\Debug\net8.0\ref\BackgroundTasks.dll
+G:\DotNetProjects\14LaveN.Blog\BackgroundTasks\obj\Debug\net8.0\BackgroundTasks.sourcelink.json

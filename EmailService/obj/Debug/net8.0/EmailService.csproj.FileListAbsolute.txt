@@ -12,3 +12,4 @@ G:\DotNetProjects\14LaveN.Blog\EmailService\obj\Debug\net8.0\EmailService.dll
 G:\DotNetProjects\14LaveN.Blog\EmailService\obj\Debug\net8.0\refint\EmailService.dll
 G:\DotNetProjects\14LaveN.Blog\EmailService\obj\Debug\net8.0\EmailService.pdb
 G:\DotNetProjects\14LaveN.Blog\EmailService\obj\Debug\net8.0\ref\EmailService.dll
+G:\DotNetProjects\14LaveN.Blog\EmailService\obj\Debug\net8.0\EmailService.sourcelink.json

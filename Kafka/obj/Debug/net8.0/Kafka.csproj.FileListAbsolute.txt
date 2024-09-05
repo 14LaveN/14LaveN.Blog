@@ -9,3 +9,10 @@ G:\DotNetProjects\14LaveN.Blog\Kafka\obj\Debug\net8.0\Kafka.dll
 G:\DotNetProjects\14LaveN.Blog\Kafka\obj\Debug\net8.0\refint\Kafka.dll
 G:\DotNetProjects\14LaveN.Blog\Kafka\obj\Debug\net8.0\Kafka.pdb
 G:\DotNetProjects\14LaveN.Blog\Kafka\obj\Debug\net8.0\ref\Kafka.dll
+G:\DotNetProjects\14LaveN.Blog\Kafka\bin\Debug\net8.0\Application.dll
+G:\DotNetProjects\14LaveN.Blog\Kafka\bin\Debug\net8.0\Domain.dll
+G:\DotNetProjects\14LaveN.Blog\Kafka\bin\Debug\net8.0\Application.pdb
+G:\DotNetProjects\14LaveN.Blog\Kafka\bin\Debug\net8.0\Domain.pdb
+G:\DotNetProjects\14LaveN.Blog\Kafka\obj\Debug\net8.0\Kafka.csproj.AssemblyReference.cache
+G:\DotNetProjects\14LaveN.Blog\Kafka\obj\Debug\net8.0\Kafka.sourcelink.json
+G:\DotNetProjects\14LaveN.Blog\Kafka\obj\Debug\net8.0\Kafka.csproj.CopyComplete
