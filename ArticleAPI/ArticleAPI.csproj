@@ -48,6 +48,7 @@
       <Folder Include="Contracts\Delete\" />
       <Folder Include="Contracts\GetById\" />
       <Folder Include="Contracts\Update\" />
+      <Folder Include="Controllers\" />
     </ItemGroup>
 
 </Project>

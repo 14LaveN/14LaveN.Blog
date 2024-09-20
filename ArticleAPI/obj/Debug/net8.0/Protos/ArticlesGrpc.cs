@@ -115,13 +115,10 @@ namespace ArticleAPI {
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual Task<CreateResponse> CreateArticle(CreateRequest request, grpc.Metadata headers = null,
-        DateTime? deadline = null,
-        CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::ArticleAPI.CreateResponse CreateArticle(global::ArticleAPI.CreateRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return CreateArticle(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-
       /// <summary>
       /// Sends a greeting
       /// </summary>
@@ -129,7 +126,7 @@ namespace ArticleAPI {
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual async Task<CreateResponse> CreateArticle(CreateRequest request, grpc.CallOptions options)
+      public virtual global::ArticleAPI.CreateResponse CreateArticle(global::ArticleAPI.CreateRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_CreateArticle, null, options, request);
       }
@@ -158,14 +155,12 @@ namespace ArticleAPI {
         return CallInvoker.AsyncUnaryCall(__Method_CreateArticle, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual Task<GetArticlesResponse> GetArticles(GetArticlesRequest request, grpc.Metadata headers = null,
-        DateTime? deadline = null,
-        CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::ArticleAPI.GetArticlesResponse GetArticles(global::ArticleAPI.GetArticlesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetArticles(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual async Task<GetArticlesResponse> GetArticles(GetArticlesRequest request, grpc.CallOptions options)
+      public virtual global::ArticleAPI.GetArticlesResponse GetArticles(global::ArticleAPI.GetArticlesRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_GetArticles, null, options, request);
       }

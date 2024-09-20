@@ -5,6 +5,11 @@
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
     </PropertyGroup>
+    
+    <ItemGroup>      
+        <Protobuf Include="Protos\articles.proto" GrpcServices="Client" />
+    </ItemGroup>
+    
     <ItemGroup>
       <PackageReference Include="Refit" Version="7.2.1" />
       <PackageReference Include="Refit.HttpClientFactory" Version="7.2.1" />
