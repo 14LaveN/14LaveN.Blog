@@ -1,0 +1,72 @@
+﻿@page "/"
+@using ArticleAPI.Controllers
+@inject ArticlesService RestClient
+
+<PageTitle>Home</PageTitle>
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8 text-center">
+            <h1 class="display-4">Articles</h1>
+            <p class="lead">Ponomarev</p>
+        </div>
+    </div>
+    
+    
+    @if (!_articleDtoObjects.IsNullOrEmpty())
+    {
+        <div class="row mt-4">
+            <!-- Пример карточек статей -->
+            <div class="col-md-4">
+                <div class="card shadow-sm mb-4">
+                    <img class="card-img-top" src="https://via.placeholder.com/400x200" alt="Article Image">
+                    <div class="card-body">
+                        <h5 class="card-title">@_objectsInPage[0].Title</h5>
+                        <p class="card-text">@_objectsInPage[0].Description.</p>
+                        <a href="#" class="btn btn-primary">Read more</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-md-4">
+                <div class="card shadow-sm mb-4">
+                    <img class="card-img-top" src="https://via.placeholder.com/400x200" alt="Article Image">
+                    <div class="card-body">
+                        <h5 class="card-title">@_objectsInPage[1].Title</h5>
+                        <p class="card-text">@_objectsInPage[1].Description.</p>
+                        <a href="#" class="btn btn-primary">Read more</a>
+                    </div>
+                </div>
+            </div>
+            
+            @if (_objectsInPage.Length is not 2)
+            {
+                <div class="col-md-4">
+                    <div class="card shadow-sm mb-4">
+                        <img class="card-img-top" src="https://via.placeholder.com/400x200" alt="Article Image">
+                        <div class="card-body">
+                            <h5 class="card-title">@_objectsInPage[2].Title</h5>
+                            <p class="card-text">@_objectsInPage[2].Description.</p>
+                            <a href="#" class="btn btn-primary">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+        
+        
+    }
+</div>
+
+@code
+{
+    private IEnumerable<ArticleDtoObject> _articleDtoObjects;
+    private ArticleDtoObject[] _objectsInPage;
+
+    protected override async Task OnInitializedAsync()
+    {
+        _articleDtoObjects = await RestClient.GetArticles();
+        _objectsInPage = _articleDtoObjects.Take(3).ToArray();
+    }
+
+}
