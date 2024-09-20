@@ -26,12 +26,6 @@
         <member name="F:ArticleAPI.HelloReply.MessageFieldNumber">
             <summary>Field number for the "message" field.</summary>
         </member>
-        <member name="F:ArticleAPI.CreateRequest.DescriptionFieldNumber">
-            <summary>Field number for the "description" field.</summary>
-        </member>
-        <member name="F:ArticleAPI.CreateRequest.TitleFieldNumber">
-            <summary>Field number for the "title" field.</summary>
-        </member>
         <member name="T:ArticleAPI.Greeter">
             <summary>
             The greeting service definition.

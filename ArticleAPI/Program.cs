@@ -53,6 +53,7 @@ app.UseCustomMiddlewares(app.Logger);
 
 // Configure the HTTP request pipeline.
 app.MapGrpcService<GreeterService>();
+app.MapGrpcService<ArticlesService>();
 
 await app.RunAsync();
 

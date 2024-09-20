@@ -16,7 +16,11 @@ public static class MediatrExtensions
         services.AddMediatR(x =>
         {
             x.RegisterServicesFromAssemblies(typeof(Create.Command).Assembly,
-                typeof(Create.CommandHandler).Assembly);
+                typeof(Create.CommandHandler).Assembly)
+                .RegisterServicesFromAssemblies(typeof(Update.Command).Assembly,
+                    typeof(Update.CommandHandler).Assembly)
+                .RegisterServicesFromAssemblies(typeof(Delete.Command).Assembly,
+                    typeof(Delete.CommandHandler).Assembly);
             
             x.AddOpenBehavior(typeof(QueryCachingBehavior<,>))
                 //TODO .AddOpenBehavior(typeof(IdentityIdempotentCommandPipelineBehavior<,>))

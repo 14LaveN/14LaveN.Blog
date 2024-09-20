@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+option csharp_namespace = "ArticleAPI";
+
+package articles;
+
+// The greeting service definition.
+service Articles {
+  // Sends a greeting
+  rpc CreateArticle (CreateRequest) returns (CreateResponse);
+}
+
+message CreateResponse {
+}
+
+message CreateRequest {
+  string description = 2;
+  string title = 1;
+}
