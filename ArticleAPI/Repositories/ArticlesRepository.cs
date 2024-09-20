@@ -14,6 +14,8 @@ namespace ArticleAPI.Repositories;
 internal sealed class ArticlesRepository(IHostEnvironment environment)
     : IArticlesRepository
 {
+    
+    
     public async Task<Result> Create(Article article)
     {
         await using NpgsqlConnection connection = DbConnection.CreateConnection(environment);
@@ -33,7 +35,7 @@ internal sealed class ArticlesRepository(IHostEnvironment environment)
                 Id = article.CreateId().Value,
                 Title = article.Title.Value,
                 Description = article.Description.Value,
-                AuthorName = "fdgdfgdfg",
+                AuthorName = article.AuthorName,
                 AuthorId = article.CreateId().Value,
                 CreatedAt = DateTime.UtcNow,
                 ModifiedAt = (DateTime?)default

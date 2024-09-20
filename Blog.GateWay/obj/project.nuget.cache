@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "h4AGQ2jq4NfgBz6kl9eYUXH/+H//F8nFETVske1YUUiYmgyG8icEOHM22QULrgwMojS7CQ2rcKdbTQUlwDHKSw==",
+  "dgSpecHash": "yjHJUf6v+wDl3HQCnN6w0U7Qj1DcnUwf3uY3od9nEfaCkeZUBfdgGJl+Bt0vKO0aucO5L8MgTNl+Zkj9tdDlpQ==",
   "success": true,
-  "projectFilePath": "G:\\DotNetProjects\\14LaveN.Blog\\Blog.GateWay\\Blog.GateWay.csproj",
+  "projectFilePath": "C:\\Programming\\DotNetProjects\\14LaveN.Blog\\Blog.GateWay\\Blog.GateWay.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\ponom\\.nuget\\packages\\system.io.hashing\\8.0.0\\system.io.hashing.8.0.0.nupkg.sha512",
-    "C:\\Users\\ponom\\.nuget\\packages\\yarp.reverseproxy\\2.2.0\\yarp.reverseproxy.2.2.0.nupkg.sha512"
+    "C:\\Users\\Александр Пономарев\\.nuget\\packages\\system.io.hashing\\8.0.0\\system.io.hashing.8.0.0.nupkg.sha512",
+    "C:\\Users\\Александр Пономарев\\.nuget\\packages\\yarp.reverseproxy\\2.2.0\\yarp.reverseproxy.2.2.0.nupkg.sha512"
   ],
   "logs": []
 }

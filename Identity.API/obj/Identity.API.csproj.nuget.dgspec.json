@@ -1,40 +1,33 @@
 {
   "format": 1,
   "restore": {
-    "G:\\DotNetProjects\\14LaveN.Blog\\Identity.API\\Identity.API.csproj": {}
+    "C:\\Programming\\DotNetProjects\\14LaveN.Blog\\Identity.API\\Identity.API.csproj": {}
   },
   "projects": {
-    "G:\\DotNetProjects\\14LaveN.Blog\\Application\\Application.csproj": {
+    "C:\\Programming\\DotNetProjects\\14LaveN.Blog\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\DotNetProjects\\14LaveN.Blog\\Application\\Application.csproj",
+        "projectUniqueName": "C:\\Programming\\DotNetProjects\\14LaveN.Blog\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "G:\\DotNetProjects\\14LaveN.Blog\\Application\\Application.csproj",
-        "packagesPath": "C:\\Users\\ponom\\.nuget\\packages\\",
-        "outputPath": "G:\\DotNetProjects\\14LaveN.Blog\\Application\\obj\\",
+        "projectPath": "C:\\Programming\\DotNetProjects\\14LaveN.Blog\\Application\\Application.csproj",
+        "packagesPath": "C:\\Users\\Александр Пономарев\\.nuget\\packages\\",
+        "outputPath": "C:\\Programming\\DotNetProjects\\14LaveN.Blog\\Application\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ponom\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Александр Пономарев\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "G:\\DotNetProjects\\14LaveN.Blog\\Domain\\Domain.csproj": {
-                "projectPath": "G:\\DotNetProjects\\14LaveN.Blog\\Domain\\Domain.csproj"
+              "C:\\Programming\\DotNetProjects\\14LaveN.Blog\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Programming\\DotNetProjects\\14LaveN.Blog\\Domain\\Domain.csproj"
               }
             }
           }
@@ -138,33 +131,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "G:\\DotNetProjects\\14LaveN.Blog\\Domain\\Domain.csproj": {
+    "C:\\Programming\\DotNetProjects\\14LaveN.Blog\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\DotNetProjects\\14LaveN.Blog\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Programming\\DotNetProjects\\14LaveN.Blog\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "G:\\DotNetProjects\\14LaveN.Blog\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\ponom\\.nuget\\packages\\",
-        "outputPath": "G:\\DotNetProjects\\14LaveN.Blog\\Domain\\obj\\",
+        "projectPath": "C:\\Programming\\DotNetProjects\\14LaveN.Blog\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\Александр Пономарев\\.nuget\\packages\\",
+        "outputPath": "C:\\Programming\\DotNetProjects\\14LaveN.Blog\\Domain\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ponom\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Александр Пономарев\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -216,47 +202,40 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "G:\\DotNetProjects\\14LaveN.Blog\\Identity.API\\Identity.API.csproj": {
+    "C:\\Programming\\DotNetProjects\\14LaveN.Blog\\Identity.API\\Identity.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\DotNetProjects\\14LaveN.Blog\\Identity.API\\Identity.API.csproj",
+        "projectUniqueName": "C:\\Programming\\DotNetProjects\\14LaveN.Blog\\Identity.API\\Identity.API.csproj",
         "projectName": "Identity.API",
-        "projectPath": "G:\\DotNetProjects\\14LaveN.Blog\\Identity.API\\Identity.API.csproj",
-        "packagesPath": "C:\\Users\\ponom\\.nuget\\packages\\",
-        "outputPath": "G:\\DotNetProjects\\14LaveN.Blog\\Identity.API\\obj\\",
+        "projectPath": "C:\\Programming\\DotNetProjects\\14LaveN.Blog\\Identity.API\\Identity.API.csproj",
+        "packagesPath": "C:\\Users\\Александр Пономарев\\.nuget\\packages\\",
+        "outputPath": "C:\\Programming\\DotNetProjects\\14LaveN.Blog\\Identity.API\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ponom\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Александр Пономарев\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "G:\\DotNetProjects\\14LaveN.Blog\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "G:\\DotNetProjects\\14LaveN.Blog\\Infrastructure\\Infrastructure.csproj"
+              "C:\\Programming\\DotNetProjects\\14LaveN.Blog\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "C:\\Programming\\DotNetProjects\\14LaveN.Blog\\Infrastructure\\Infrastructure.csproj"
               },
-              "G:\\DotNetProjects\\14LaveN.Blog\\Persistence\\Persistence.csproj": {
-                "projectPath": "G:\\DotNetProjects\\14LaveN.Blog\\Persistence\\Persistence.csproj"
+              "C:\\Programming\\DotNetProjects\\14LaveN.Blog\\Persistence\\Persistence.csproj": {
+                "projectPath": "C:\\Programming\\DotNetProjects\\14LaveN.Blog\\Persistence\\Persistence.csproj"
               },
-              "G:\\DotNetProjects\\14LaveN.Blog\\ServiceDefaults\\ServiceDefaults.csproj": {
-                "projectPath": "G:\\DotNetProjects\\14LaveN.Blog\\ServiceDefaults\\ServiceDefaults.csproj"
+              "C:\\Programming\\DotNetProjects\\14LaveN.Blog\\ServiceDefaults\\ServiceDefaults.csproj": {
+                "projectPath": "C:\\Programming\\DotNetProjects\\14LaveN.Blog\\ServiceDefaults\\ServiceDefaults.csproj"
               }
             }
           }
@@ -309,41 +288,34 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "G:\\DotNetProjects\\14LaveN.Blog\\Infrastructure\\Infrastructure.csproj": {
+    "C:\\Programming\\DotNetProjects\\14LaveN.Blog\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\DotNetProjects\\14LaveN.Blog\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "C:\\Programming\\DotNetProjects\\14LaveN.Blog\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "G:\\DotNetProjects\\14LaveN.Blog\\Infrastructure\\Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\ponom\\.nuget\\packages\\",
-        "outputPath": "G:\\DotNetProjects\\14LaveN.Blog\\Infrastructure\\obj\\",
+        "projectPath": "C:\\Programming\\DotNetProjects\\14LaveN.Blog\\Infrastructure\\Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Александр Пономарев\\.nuget\\packages\\",
+        "outputPath": "C:\\Programming\\DotNetProjects\\14LaveN.Blog\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ponom\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Александр Пономарев\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "G:\\DotNetProjects\\14LaveN.Blog\\Application\\Application.csproj": {
-                "projectPath": "G:\\DotNetProjects\\14LaveN.Blog\\Application\\Application.csproj"
+              "C:\\Programming\\DotNetProjects\\14LaveN.Blog\\Application\\Application.csproj": {
+                "projectPath": "C:\\Programming\\DotNetProjects\\14LaveN.Blog\\Application\\Application.csproj"
               }
             }
           }
@@ -387,41 +359,34 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "G:\\DotNetProjects\\14LaveN.Blog\\Kafka\\Kafka.csproj": {
+    "C:\\Programming\\DotNetProjects\\14LaveN.Blog\\Kafka\\Kafka.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\DotNetProjects\\14LaveN.Blog\\Kafka\\Kafka.csproj",
+        "projectUniqueName": "C:\\Programming\\DotNetProjects\\14LaveN.Blog\\Kafka\\Kafka.csproj",
         "projectName": "Kafka",
-        "projectPath": "G:\\DotNetProjects\\14LaveN.Blog\\Kafka\\Kafka.csproj",
-        "packagesPath": "C:\\Users\\ponom\\.nuget\\packages\\",
-        "outputPath": "G:\\DotNetProjects\\14LaveN.Blog\\Kafka\\obj\\",
+        "projectPath": "C:\\Programming\\DotNetProjects\\14LaveN.Blog\\Kafka\\Kafka.csproj",
+        "packagesPath": "C:\\Users\\Александр Пономарев\\.nuget\\packages\\",
+        "outputPath": "C:\\Programming\\DotNetProjects\\14LaveN.Blog\\Kafka\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ponom\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Александр Пономарев\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "G:\\DotNetProjects\\14LaveN.Blog\\Application\\Application.csproj": {
-                "projectPath": "G:\\DotNetProjects\\14LaveN.Blog\\Application\\Application.csproj"
+              "C:\\Programming\\DotNetProjects\\14LaveN.Blog\\Application\\Application.csproj": {
+                "projectPath": "C:\\Programming\\DotNetProjects\\14LaveN.Blog\\Application\\Application.csproj"
               }
             }
           }
@@ -457,44 +422,37 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "G:\\DotNetProjects\\14LaveN.Blog\\Persistence\\Persistence.csproj": {
+    "C:\\Programming\\DotNetProjects\\14LaveN.Blog\\Persistence\\Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\DotNetProjects\\14LaveN.Blog\\Persistence\\Persistence.csproj",
+        "projectUniqueName": "C:\\Programming\\DotNetProjects\\14LaveN.Blog\\Persistence\\Persistence.csproj",
         "projectName": "Persistence",
-        "projectPath": "G:\\DotNetProjects\\14LaveN.Blog\\Persistence\\Persistence.csproj",
-        "packagesPath": "C:\\Users\\ponom\\.nuget\\packages\\",
-        "outputPath": "G:\\DotNetProjects\\14LaveN.Blog\\Persistence\\obj\\",
+        "projectPath": "C:\\Programming\\DotNetProjects\\14LaveN.Blog\\Persistence\\Persistence.csproj",
+        "packagesPath": "C:\\Users\\Александр Пономарев\\.nuget\\packages\\",
+        "outputPath": "C:\\Programming\\DotNetProjects\\14LaveN.Blog\\Persistence\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ponom\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Александр Пономарев\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "G:\\DotNetProjects\\14LaveN.Blog\\Application\\Application.csproj": {
-                "projectPath": "G:\\DotNetProjects\\14LaveN.Blog\\Application\\Application.csproj"
+              "C:\\Programming\\DotNetProjects\\14LaveN.Blog\\Application\\Application.csproj": {
+                "projectPath": "C:\\Programming\\DotNetProjects\\14LaveN.Blog\\Application\\Application.csproj"
               },
-              "G:\\DotNetProjects\\14LaveN.Blog\\Kafka\\Kafka.csproj": {
-                "projectPath": "G:\\DotNetProjects\\14LaveN.Blog\\Kafka\\Kafka.csproj"
+              "C:\\Programming\\DotNetProjects\\14LaveN.Blog\\Kafka\\Kafka.csproj": {
+                "projectPath": "C:\\Programming\\DotNetProjects\\14LaveN.Blog\\Kafka\\Kafka.csproj"
               }
             }
           }
@@ -550,44 +508,37 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "G:\\DotNetProjects\\14LaveN.Blog\\ServiceDefaults\\ServiceDefaults.csproj": {
+    "C:\\Programming\\DotNetProjects\\14LaveN.Blog\\ServiceDefaults\\ServiceDefaults.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\DotNetProjects\\14LaveN.Blog\\ServiceDefaults\\ServiceDefaults.csproj",
+        "projectUniqueName": "C:\\Programming\\DotNetProjects\\14LaveN.Blog\\ServiceDefaults\\ServiceDefaults.csproj",
         "projectName": "ServiceDefaults",
-        "projectPath": "G:\\DotNetProjects\\14LaveN.Blog\\ServiceDefaults\\ServiceDefaults.csproj",
-        "packagesPath": "C:\\Users\\ponom\\.nuget\\packages\\",
-        "outputPath": "G:\\DotNetProjects\\14LaveN.Blog\\ServiceDefaults\\obj\\",
+        "projectPath": "C:\\Programming\\DotNetProjects\\14LaveN.Blog\\ServiceDefaults\\ServiceDefaults.csproj",
+        "packagesPath": "C:\\Users\\Александр Пономарев\\.nuget\\packages\\",
+        "outputPath": "C:\\Programming\\DotNetProjects\\14LaveN.Blog\\ServiceDefaults\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ponom\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Александр Пономарев\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "G:\\DotNetProjects\\14LaveN.Blog\\Application\\Application.csproj": {
-                "projectPath": "G:\\DotNetProjects\\14LaveN.Blog\\Application\\Application.csproj"
+              "C:\\Programming\\DotNetProjects\\14LaveN.Blog\\Application\\Application.csproj": {
+                "projectPath": "C:\\Programming\\DotNetProjects\\14LaveN.Blog\\Application\\Application.csproj"
               },
-              "G:\\DotNetProjects\\14LaveN.Blog\\Domain\\Domain.csproj": {
-                "projectPath": "G:\\DotNetProjects\\14LaveN.Blog\\Domain\\Domain.csproj"
+              "C:\\Programming\\DotNetProjects\\14LaveN.Blog\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Programming\\DotNetProjects\\14LaveN.Blog\\Domain\\Domain.csproj"
               }
             }
           }
@@ -662,7 +613,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

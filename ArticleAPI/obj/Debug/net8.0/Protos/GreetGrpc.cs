@@ -52,10 +52,6 @@ namespace ArticleAPI {
     static readonly grpc::Marshaller<global::ArticleAPI.HelloRequest> __Marshaller_greet_HelloRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ArticleAPI.HelloRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::ArticleAPI.HelloReply> __Marshaller_greet_HelloReply = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ArticleAPI.HelloReply.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::ArticleAPI.CreateRequest> __Marshaller_greet_CreateRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ArticleAPI.CreateRequest.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::ArticleAPI.CreateResponse> __Marshaller_greet_CreateResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ArticleAPI.CreateResponse.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::ArticleAPI.HelloRequest, global::ArticleAPI.HelloReply> __Method_SayHello = new grpc::Method<global::ArticleAPI.HelloRequest, global::ArticleAPI.HelloReply>(
@@ -64,14 +60,6 @@ namespace ArticleAPI {
         "SayHello",
         __Marshaller_greet_HelloRequest,
         __Marshaller_greet_HelloReply);
-
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::ArticleAPI.CreateRequest, global::ArticleAPI.CreateResponse> __Method_CreateArticle = new grpc::Method<global::ArticleAPI.CreateRequest, global::ArticleAPI.CreateResponse>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "CreateArticle",
-        __Marshaller_greet_CreateRequest,
-        __Marshaller_greet_CreateResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -95,12 +83,6 @@ namespace ArticleAPI {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::ArticleAPI.CreateResponse> CreateArticle(global::ArticleAPI.CreateRequest request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
     }
 
     /// <summary>Creates service definition that can be registered with a server</summary>
@@ -109,8 +91,7 @@ namespace ArticleAPI {
     public static grpc::ServerServiceDefinition BindService(GreeterBase serviceImpl)
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
-          .AddMethod(__Method_SayHello, serviceImpl.SayHello)
-          .AddMethod(__Method_CreateArticle, serviceImpl.CreateArticle).Build();
+          .AddMethod(__Method_SayHello, serviceImpl.SayHello).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
@@ -121,7 +102,6 @@ namespace ArticleAPI {
     public static void BindService(grpc::ServiceBinderBase serviceBinder, GreeterBase serviceImpl)
     {
       serviceBinder.AddMethod(__Method_SayHello, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ArticleAPI.HelloRequest, global::ArticleAPI.HelloReply>(serviceImpl.SayHello));
-      serviceBinder.AddMethod(__Method_CreateArticle, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ArticleAPI.CreateRequest, global::ArticleAPI.CreateResponse>(serviceImpl.CreateArticle));
     }
 
   }
