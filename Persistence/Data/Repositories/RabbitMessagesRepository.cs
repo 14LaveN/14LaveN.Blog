@@ -31,7 +31,7 @@ internal sealed class RabbitMessagesRepository
     /// <inheritdoc />
     public async Task<Maybe<List<RabbitMessage>>> GetByTime(
         int time,
-        string metricName = default)
+        string? metricName = default)
     {
         var rabbitMessages = await _commonMongoDbContext
             .RabbitMessages

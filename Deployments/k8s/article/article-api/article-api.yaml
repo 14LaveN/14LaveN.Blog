@@ -1,0 +1,50 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: article-api-deployment
+  labels:
+    app: article-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: article-api
+  template:
+    metadata:
+      labels: 
+        app: article-api
+    spec:
+      containers:
+        - name: article-api
+          image: articleapi
+          imagePullPolicy: IfNotPresent
+          env:
+            - name: ASPNETCORE_ENVIRONMENT
+              value: Development
+          ports:
+            - containerPort: 6000
+          resources:
+            requests:
+              memory: "64Mi"
+              cpu: "250m"
+            limits:
+              memory: "128Mi"
+              cpu: "500m"
+---
+
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: article-api-ingress
+spec:
+  rules:
+    - host: article-api.example.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: article-api-service
+                port:
+                  number: 80

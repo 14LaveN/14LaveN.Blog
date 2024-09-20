@@ -6,6 +6,7 @@ using AspNetCore.Serilog.RequestLoggingMiddleware;
 using Common.Logging;
 using HealthChecks.UI.Client;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
+using Microsoft.AspNetCore.HttpOverrides;
 using Prometheus;
 using Serilog;
 using ServiceDefaults;
@@ -14,11 +15,10 @@ using ServiceDefaults;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.AddApplicationServices(builder.WebHost);
+builder.AddApplicationServices(builder.WebHost);  
 builder.AddServiceDefaults();
 builder.Host.UseSerilog(Logging.ConfigureLogger);
 
-// Add services to the container.
 builder.Services.AddGrpc();
 
 #endregion
@@ -41,9 +41,9 @@ app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();
 
-app.UseIdentityServer();
+app.UseSession();
 
-MapEndpoints();
+MapEndpoints();  
 
 app.UseMetricsExtension();
 
@@ -53,7 +53,6 @@ app.UseCustomMiddlewares(app.Logger);
 
 // Configure the HTTP request pipeline.
 app.MapGrpcService<GreeterService>();
-
 
 await app.RunAsync();
 

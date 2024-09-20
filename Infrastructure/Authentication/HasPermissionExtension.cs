@@ -1,7 +1,7 @@
 using System.Net;
+using Duende.IdentityServer.Extensions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
-using IdentityServer4.Extensions;
 
 namespace Infrastructure.Authentication;
 

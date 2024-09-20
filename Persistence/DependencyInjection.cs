@@ -1,4 +1,5 @@
 ﻿using Application.Core.Abstractions.Idempotency;
+using Application.Core.Abstractions.Redis;
 using Application.Core.Settings;
 using Domain.Entities;
 using Domain.Repositories;
@@ -12,6 +13,7 @@ using Persistence.Core.Abstractions.HealthChecks;
 using Persistence.Data.Repositories;
 using Persistence.Idempotency;
 using Persistence.Infrastructure;
+using Persistence.Redis;
 
 namespace Persistence;
 
@@ -43,10 +45,6 @@ public static class DependencyInjection
 
         var connectionString = configuration.GetConnectionString(ConnectionString.SettingsKey);
         
-        if (connectionString is not null)
-            services.AddHealthChecks()
-                .AddNpgSql(connectionString);
-        
         services.AddDbContext<BaseDbContext>((sp, o) =>
             o.UseNpgsql(connectionString, act
                     =>
@@ -66,13 +64,14 @@ public static class DependencyInjection
         services.AddScoped<IUnitOfWork, UnitOfWork>();
         services.TryAddKeyedScoped<IDbContext, BaseDbContext>(typeof(BaseDbContext));
         services.AddScoped<IIdempotencyService, IdempotencyService>();
+        services.TryAddScoped<IRedisPubSubService, RedisPubSubService>();
         
-        services
-            .AddHealthChecks()
-            .AddCheck<DbContextHealthCheck<BaseDbContext>>(
-                "BaseDatabase",
-                failureStatus: HealthStatus.Unhealthy,
-                tags: new[] { "db", "sql" });
+        //TODO services
+        //TODO     .AddHealthChecks()
+        //TODO     .AddCheck<DbContextHealthCheck<BaseDbContext>>(
+        //TODO         "BaseDatabase",
+        //TODO         failureStatus: HealthStatus.Unhealthy,
+        //TODO         tags: new[] { "db", "sql" });
 
         return services;
     }
@@ -90,11 +89,11 @@ public static class DependencyInjection
             .BindConfiguration(MongoSettings.MongoSettingsKey)
             .ValidateOnStart();
 
-        services
-            .AddHealthChecks()
-            .AddCheck<MongoDbHealthCheck>("mongodb", 
-                failureStatus: Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus.Unhealthy, 
-                tags: new[] { "db", "mongodb" });
+        //TODO services
+        //TODO     .AddHealthChecks()
+        //TODO     .AddCheck<MongoDbHealthCheck>("mongodb", 
+        //TODO         failureStatus: HealthStatus.Unhealthy, 
+        //TODO         tags: new[] { "db", "mongodb" });
         
         services.AddSingleton<IMetricsRepository, MetricsRepository>()
             .AddSingleton<IMongoRepository<RabbitMessage>, RabbitMessagesRepository>()

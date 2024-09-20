@@ -36,6 +36,12 @@ public static class DependencyInjection
                 options.TrackStatistics = true;
                 options.TrackLinkedCacheEntries = true;
             });
+
+        services.AddSession(options =>
+        {
+            options.IdleTimeout = TimeSpan.FromMinutes(60);
+            options.Cookie.IsEssential = true;
+        });
         
         return services;
     }

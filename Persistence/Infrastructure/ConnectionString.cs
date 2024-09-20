@@ -10,7 +10,7 @@ public sealed class ConnectionString
     /// <summary>
     /// The connection strings key.
     /// </summary>
-    public const string SettingsKey = "ASGenericDb";
+    public const string SettingsKey = "BGenericDb";
 
     /// <summary>
     /// Initializes a new instance of the <see cref="ConnectionString"/> class.

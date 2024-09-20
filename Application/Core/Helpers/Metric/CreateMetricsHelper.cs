@@ -1,7 +1,9 @@
 using System.Diagnostics;
 using System.Globalization;
+using Application.Core.Abstractions.Redis;
 using Application.Core.Extensions;
 using Microsoft.Extensions.Caching.Distributed;
+using Microsoft.Extensions.Logging;
 using Prometheus;
 
 namespace Application.Core.Helpers.Metric;
@@ -9,19 +11,11 @@ namespace Application.Core.Helpers.Metric;
 /// <summary>
 /// Represents the create metrics helper.
 /// </summary>
-public sealed class CreateMetricsHelper
+public sealed class CreateMetricsHelper(
+    IDistributedCache distributedCache) 
 {
     private static readonly Counter RequestCounter =
         Metrics.CreateCounter("AiSearch_requests_total", "Total number of requests.");
-    
-    private readonly IDistributedCache _distributedCache;
-
-    /// <summary>
-    /// Initialize a new instance of the <see cref="CreateMetricsHelper"/>
-    /// </summary>
-    /// <param name="distributedCache">The distributed cache.</param>
-    public CreateMetricsHelper (IDistributedCache distributedCache) =>
-        _distributedCache = distributedCache;
 
     /// <summary>
     /// Create metrics method.
@@ -40,13 +34,13 @@ public sealed class CreateMetricsHelper
             {"Value",RequestCounter.Value.ToString(CultureInfo.InvariantCulture)}
         };
         
-        await _distributedCache.SetRecordAsync(
+        await distributedCache.SetRecordAsync(
             "metrics_counter-key",
             counter,
             TimeSpan.FromMinutes(6),
             TimeSpan.FromMinutes(6));
 
-        await _distributedCache.SetRecordAsync(
+        await distributedCache.SetRecordAsync(
             "metrics_request_duration_seconds-key",
             stopwatch.Elapsed.TotalMilliseconds.ToString(CultureInfo.CurrentCulture),
             TimeSpan.FromMinutes(6),

@@ -2,7 +2,7 @@ using Domain.Entities;
 using Firebase.Storage;
 using Microsoft.Extensions.Logging;
 using Domain.Repositories;
-using IdentityServer4.Extensions;
+using Duende.IdentityServer.Extensions;
 using Infrastructure.CSV;
 
 namespace BackgroundTasks.Services;

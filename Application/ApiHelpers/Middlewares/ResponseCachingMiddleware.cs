@@ -1,7 +1,6 @@
+using Duende.IdentityServer.Extensions;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Caching.Distributed;
-using Microsoft.IdentityModel.Tokens;
-using IdentityServer4.Extensions;
 
 namespace Application.ApiHelpers.Middlewares;
 

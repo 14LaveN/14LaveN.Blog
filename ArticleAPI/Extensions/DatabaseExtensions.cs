@@ -1,4 +1,6 @@
 using Application.Core.Extensions;
+using ArticleAPI.Repositories;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 using Persistence;
 
@@ -11,6 +13,8 @@ public static class DatabaseExtensions
         IConfiguration configuration)
     {
         ArgumentNullException.ThrowIfNull(services);
+        
+        services.TryAddScoped<IArticlesRepository, ArticlesRepository>();
         
         services
             .AddBaseDatabase(configuration);

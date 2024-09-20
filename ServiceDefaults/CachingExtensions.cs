@@ -2,6 +2,7 @@ using Application.Core.Extensions;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using StackExchange.Redis;
 
 namespace ServiceDefaults;
 
@@ -30,6 +31,9 @@ public static class CachingExtensions
                 options.TrackStatistics = true;
                 options.TrackLinkedCacheEntries = true;
             });
+        
+        services.AddSingleton<IConnectionMultiplexer>(_ => 
+            ConnectionMultiplexer.Connect(builder.Configuration.GetConnectionStringOrThrow("Redis")));
         
         services.AddStackExchangeRedisCache(options =>
         {

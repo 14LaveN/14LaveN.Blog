@@ -49,13 +49,13 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Duende.IdentityServer": {
+              "target": "Package",
+              "version": "[7.0.6, )"
+            },
             "FluentValidation": {
               "target": "Package",
               "version": "[11.9.2, )"
-            },
-            "IdentityServer4": {
-              "target": "Package",
-              "version": "[4.1.2, )"
             },
             "MediatR": {
               "target": "Package",
@@ -96,6 +96,10 @@
             "Serilog": {
               "target": "Package",
               "version": "[4.0.2-dev-02226, )"
+            },
+            "StackExchange.Redis": {
+              "target": "Package",
+              "version": "[2.7.27, )"
             },
             "Swashbuckle.AspNetCore.Swagger": {
               "target": "Package",
@@ -264,10 +268,6 @@
             "CsvHelper": {
               "target": "Package",
               "version": "[33.0.1, )"
-            },
-            "IdentityServer4": {
-              "target": "Package",
-              "version": "[4.1.2, )"
             },
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",

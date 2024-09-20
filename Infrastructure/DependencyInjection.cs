@@ -3,6 +3,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Infrastructure.Common;
 using Application.Core.Abstractions.Common;
 using Application.Core.Abstractions.Helpers.JWT;
+using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 
 namespace Infrastructure;
@@ -18,11 +19,15 @@ public static class DependencyInjection
     {
         ArgumentNullException.ThrowIfNull(services);
         
+        services.AddHttpContextAccessor();
+        
         services
             .AddScoped<IDateTime, MachineDateTime>()
             .AddScoped<IUserIdentifierProvider, UserIdentifierProvider>()
             .AddScoped<IPermissionProvider, PermissionProvider>()
-            .TryAddScoped<IUserNameProvider, UserNameProvider>();
+            .AddScoped<IUserNameProvider, UserNameProvider>();
+            
+        services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
         
         return services;
     }

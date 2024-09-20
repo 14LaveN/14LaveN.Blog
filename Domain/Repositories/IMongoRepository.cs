@@ -24,13 +24,13 @@ public interface IMongoRepository<T>
     /// <returns>Maybe List by <see cref="T"/> classes.</returns>
     Task<Maybe<List<T>>> GetByTime(
         int time,
-        string metricName = default);
+        string? metricName = default);
     
     /// <summary>
     /// Insert in database the entity.
     /// </summary>
     /// <param name="type">The generic type.</param>
-    /// <returns>Returns <see cref="TaskEntity"/>.</returns>
+    /// <returns>Returns <see cref="Task{TResult}"/>.</returns>
     System.Threading.Tasks.Task InsertAsync(T type);
     
     /// <summary>

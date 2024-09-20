@@ -33,13 +33,14 @@ internal sealed class MetricsRepository
         await _commonMongoDbContext.Metrics.InsertOneAsync(type);
 
     /// <inheritdoc />
-    public async Task<Maybe<List<MetricEntity>>> GetByTime(int time, string metricName)
+    public async Task<Maybe<List<MetricEntity>>> GetByTime(int time, string? metricName)
     {
         var metrics = await _commonMongoDbContext.Metrics
-            .FindAsync(x=>x.CreatedAt.Day == DateTime.Today.Day 
-            && x.CreatedAt.Month == DateTime.Today.Month
-            && x.CreatedAt.Year == DateTime.Today.Year
-            && x.Name == metricName)
+            .FindAsync(x=>
+                x.CreatedAt.Day == DateTime.Today.Day 
+                && x.CreatedAt.Month == DateTime.Today.Month
+                && x.CreatedAt.Year == DateTime.Today.Year
+                && x.Name == metricName)
             .Result
             .ToListAsync();
         

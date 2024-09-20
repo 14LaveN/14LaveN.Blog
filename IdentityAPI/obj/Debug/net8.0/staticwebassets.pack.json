@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "G:\\DotNetProjects\\14LaveN.Blog\\IdentityApi\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\IdentityApi.bundle.scp.css",
+      "PackagePath": "staticwebassets\\IdentityApi.bundle.scp.css"
+    },
+    {
+      "Id": "G:\\DotNetProjects\\14LaveN.Blog\\IdentityApi\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "G:\\DotNetProjects\\14LaveN.Blog\\IdentityApi\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "G:\\DotNetProjects\\14LaveN.Blog\\IdentityApi\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "G:\\DotNetProjects\\14LaveN.Blog\\IdentityApi\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.IdentityApi.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.IdentityApi.props",
+      "PackagePath": "build\\IdentityApi.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.IdentityApi.props",
+      "PackagePath": "buildMultiTargeting\\IdentityApi.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.IdentityApi.props",
+      "PackagePath": "buildTransitive\\IdentityApi.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

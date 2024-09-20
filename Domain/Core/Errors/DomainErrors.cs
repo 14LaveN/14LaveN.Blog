@@ -15,23 +15,32 @@ public static class DomainErrors
         public static Error IsNull =>
             new("StringErrors.IsNull", "The string is null.");
     }
+    
+    /// <summary>
+    /// Contains the ulid errors
+    /// </summary>
+    public static class Ulid
+    {
+        public static Error IsEmpty =>
+            new("Ulid.IsEmpty", "The ulid is empty.");
+    }
 
     /// <summary>
-    /// Contains the post errors.
+    /// Contains the article errors.
     /// </summary>
-    public static class Post
+    public static class Article
     {
         public static Error NotFound =>
-            new("Post.NotFound", "The post with the specified element was not found.");
+            new("Article.NotFound", "The article with the specified element was not found.");
         
         public static Error CannotChangeTitle =>
-            new("Post.CannotChangeTitle", "The title cannot be changed to the specified title.");
+            new("Article.CannotChangeTitle", "The title cannot be changed to the specified title.");
         
         public static Error CannotChangeDescription =>
-            new("Post.CannotChangeDescription", "The description cannot be changed to the specified description.");
+            new("Article.CannotChangeDescription", "The description cannot be changed to the specified description.");
         
         public static Error HasAlreadyTaken =>
-            new("Post.HasAlreadyTaken", "The post with the specified element has already taken.");
+            new("Article.HasAlreadyTaken", "The article with the specified element has already taken.");
     }
 
 

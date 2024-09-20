@@ -23,9 +23,8 @@ public sealed class IdempotentCommandPipelineBehavior<TRequest, TResponse>(
         CancellationToken cancellationToken)
     {
         if (await idempotencyService.RequestExistsAsync(request.RequestId))
-        {
-            return default;
-        }
+            return default!;
+        
         
         await idempotencyService.CreateRequestAsync(request.RequestId, typeof(TRequest).Name);
         

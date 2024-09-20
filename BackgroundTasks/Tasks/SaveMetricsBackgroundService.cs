@@ -1,7 +1,7 @@
 using Application.Core.Extensions;
 using Domain.Entities;
 using Domain.Repositories;
-using IdentityServer4.Extensions;
+using Duende.IdentityServer.Extensions;
 using Microsoft.Extensions.Caching.Distributed;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;

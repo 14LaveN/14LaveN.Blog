@@ -23,7 +23,7 @@ public static class DistributedCacheExtensions
         TimeSpan? absoluteExpireTime = null,
         TimeSpan? unusedExpireTime = null)
     {
-        var options = new DistributedCacheEntryOptions
+        DistributedCacheEntryOptions options = new()
         {
             AbsoluteExpirationRelativeToNow = absoluteExpireTime ?? TimeSpan.FromSeconds(60),
             SlidingExpiration = unusedExpireTime
@@ -40,12 +40,12 @@ public static class DistributedCacheExtensions
     /// <param name="recordId">The cache key.</param>
     /// <typeparam name="T">The generic type.</typeparam>
     /// <returns>Return generic object.</returns>
-    public static async Task<T> GetRecordAsync<T>(this IDistributedCache cache,
+    public static async ValueTask<T> GetRecordAsync<T>(this IDistributedCache cache,
         string recordId)
     {
         var jsonData = await cache.GetStringAsync(recordId);
-
-        return jsonData is null ? default!
-            : JsonSerializer.Deserialize<T>(jsonData)!;
+        
+        return await new ValueTask<T>(jsonData is null ? default!
+            : JsonSerializer.Deserialize<T>(jsonData)!);
     }
 }

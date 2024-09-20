@@ -1,0 +1,106 @@
+# This is a generated file. Not intended for manual editing.
+services:
+  articleapi:
+    build:
+      context: "G:\\DotNetProjects\\14LaveN.Blog"
+      dockerfile: "ArticleAPI/Dockerfile"
+      target: "base"
+      args:
+        BUILD_CONFIGURATION: "Debug"
+    command: []
+    entrypoint:
+    - "/opt/rider-debugger/linux-x64/JetBrains.Debugger.Worker"
+    - "--runtimeconfig"
+    - "/opt/rider-debugger/JetBrains.Debugger.Worker.runtimeconfig.json"
+    - "--mode=server"
+    - "--frontend-port=57100"
+    - "--backend-port=57300"
+    - "--timeout=60"
+    environment:
+      DOTNET_USE_POLLING_FILE_WATCHER: "true"
+      RIDER_DEBUGGER_LOG_DIR: "/var/opt/rider-debugger"
+      RESHARPER_LOG_CONF: "/etc/opt/rider-debugger/backend-log.xml"
+    image: "articleapi:dev"
+    ports:
+    - "127.0.0.1:57000:57100"
+    - "127.0.0.1:57200:57300"
+    volumes:
+    - "C:\\Users\\ponom\\.nuget\\packages:/home/app/.nuget/packages"
+    - "G:\\DotNetProjects\\14LaveN.Blog\\ArticleAPI:/app:rw"
+    - "G:\\DotNetProjects\\14LaveN.Blog:/src:rw"
+    - "C:\\Users\\ponom\\AppData\\Local\\JetBrains\\RiderRemoteDebugger\\2024.1.1\\\
+      Linux64:/opt/rider-debugger"
+    - "G:\\Rider\\JetBrains Rider 2024.1.1\\bin:/etc/opt/rider-debugger/backend-log.xml"
+    - "C:\\Users\\ponom\\AppData\\Local\\JetBrains\\Rider2024.1\\log\\DebuggerWorker\\\
+      JetBrains.Debugger.Worker.2024_9_08_17_40_04:/var/opt/rider-debugger:rw"
+    working_dir: "/app"
+  blog:
+    build:
+      context: "G:\\DotNetProjects\\14LaveN.Blog"
+      dockerfile: "Blog/Dockerfile"
+      target: "base"
+      args:
+        BUILD_CONFIGURATION: "Debug"
+    command: []
+    entrypoint:
+    - "/opt/rider-debugger/linux-x64/JetBrains.Debugger.Worker"
+    - "--runtimeconfig"
+    - "/opt/rider-debugger/JetBrains.Debugger.Worker.runtimeconfig.json"
+    - "--mode=server"
+    - "--frontend-port=57100"
+    - "--backend-port=57300"
+    - "--timeout=60"
+    environment:
+      ASPNETCORE_ENVIRONMENT: "Development"
+      DOTNET_USE_POLLING_FILE_WATCHER: "true"
+      RIDER_DEBUGGER_LOG_DIR: "/var/opt/rider-debugger"
+      RESHARPER_LOG_CONF: "/etc/opt/rider-debugger/backend-log.xml"
+    image: "blog:dev"
+    ports:
+    - "127.0.0.1:57001:57100"
+    - "127.0.0.1:57201:57300"
+    volumes:
+    - "C:\\Users\\ponom\\.nuget\\packages:/home/app/.nuget/packages"
+    - "G:\\DotNetProjects\\14LaveN.Blog\\Blog:/app:rw"
+    - "G:\\DotNetProjects\\14LaveN.Blog:/src:rw"
+    - "C:\\Users\\ponom\\AppData\\Local\\JetBrains\\RiderRemoteDebugger\\2024.1.1\\\
+      Linux64:/opt/rider-debugger"
+    - "G:\\Rider\\JetBrains Rider 2024.1.1\\bin:/etc/opt/rider-debugger/backend-log.xml"
+    - "C:\\Users\\ponom\\AppData\\Local\\JetBrains\\Rider2024.1\\log\\DebuggerWorker\\\
+      JetBrains.Debugger.Worker.2024_9_08_17_40_04:/var/opt/rider-debugger:rw"
+    working_dir: "/app"
+  blog.gateway:
+    build:
+      context: "G:\\DotNetProjects\\14LaveN.Blog"
+      dockerfile: "Blog.GateWay/Dockerfile"
+      target: "base"
+      args:
+        BUILD_CONFIGURATION: "Debug"
+    command: []
+    entrypoint:
+    - "/opt/rider-debugger/linux-x64/JetBrains.Debugger.Worker"
+    - "--runtimeconfig"
+    - "/opt/rider-debugger/JetBrains.Debugger.Worker.runtimeconfig.json"
+    - "--mode=server"
+    - "--frontend-port=57100"
+    - "--backend-port=57300"
+    - "--timeout=60"
+    environment:
+      ASPNETCORE_ENVIRONMENT: "Development"
+      DOTNET_USE_POLLING_FILE_WATCHER: "true"
+      RIDER_DEBUGGER_LOG_DIR: "/var/opt/rider-debugger"
+      RESHARPER_LOG_CONF: "/etc/opt/rider-debugger/backend-log.xml"
+    image: "blog.gateway:dev"
+    ports:
+    - "127.0.0.1:57002:57100"
+    - "127.0.0.1:57202:57300"
+    volumes:
+    - "C:\\Users\\ponom\\.nuget\\packages:/home/app/.nuget/packages"
+    - "G:\\DotNetProjects\\14LaveN.Blog\\Blog.GateWay:/app:rw"
+    - "G:\\DotNetProjects\\14LaveN.Blog:/src:rw"
+    - "C:\\Users\\ponom\\AppData\\Local\\JetBrains\\RiderRemoteDebugger\\2024.1.1\\\
+      Linux64:/opt/rider-debugger"
+    - "G:\\Rider\\JetBrains Rider 2024.1.1\\bin:/etc/opt/rider-debugger/backend-log.xml"
+    - "C:\\Users\\ponom\\AppData\\Local\\JetBrains\\Rider2024.1\\log\\DebuggerWorker\\\
+      JetBrains.Debugger.Worker.2024_9_08_17_40_04:/var/opt/rider-debugger:rw"
+    working_dir: "/app"

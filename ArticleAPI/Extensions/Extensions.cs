@@ -2,8 +2,10 @@ using System.Net;
 using System.Reflection;
 using Application;
 using Application.ApiHelpers.Middlewares;
+using ArticleAPI.Model;
 using EmailService;
 using Infrastructure;
+using Microsoft.AspNetCore.Server.Kestrel.Core;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using Persistence;
 using ServiceDefaults;
@@ -15,17 +17,13 @@ internal static class Extensions
     public static void AddApplicationServices(
         this IHostApplicationBuilder builder,
         IWebHostBuilder webHost)
-    {
+    {   
         webHost.ConfigureKestrel(options =>
         {
             options.Listen(IPAddress.Any, 6000, listenOptions =>
             {
                 listenOptions.UseConnectionLogging();
-        
-            });
-            options.ListenLocalhost(6001, listenOptions =>
-            {
-                listenOptions.UseHttps();
+                listenOptions.Protocols = HttpProtocols.Http1AndHttp2;
             });
     
             options.Limits.MaxRequestBodySize = 10 * 1024; // 10 KB
@@ -47,6 +45,8 @@ internal static class Extensions
             .AddInfrastructure()
             .AddApplication()
             .AddSwagger(Assembly.GetExecutingAssembly(), 1, 0);
+        
+        builder.Services.TryAddScoped<ArticleServices>();
         
         builder.Services.TryAddTransient<LogContextEnrichmentMiddleware>();
     }

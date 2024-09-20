@@ -6,7 +6,97 @@
       dockerfile: Blog/Dockerfile
 
   articleapi:
+    container_name: article-api
     image: articleapi
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_HTTP_PORTS=6000
     build:
       context: .
       dockerfile: ArticleAPI/Dockerfile
+    ports:
+       - 6000:6001
+      
+  db:
+    container_name: postgres
+    image: postgres:latest
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: 1111
+      POSTGRES_DB: BGenericDb
+      POSTGRES_USER: sasha
+    ports:
+      - 5433:5433
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - proxybackend
+        
+  citus:
+    image: citusdata/citus:11
+    container_name: citus
+    ports:
+      - "5434:5433"
+    environment:
+      POSTGRES_PASSWORD: 1111
+    depends_on:
+      - db
+    command: [ "postgres", "-c", "shared_preload_libraries=citus" ]
+
+  pg-admin:
+    image: dpage/pgadmin4:latest
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=admin@mail.ru
+      - PGADMIN_DEFAULT_PASSWORD=1111
+      - PGADMIN_LISTEN_PORT=5050
+    ports:
+      - 5050:5050
+    networks:
+      - proxybackend
+  
+  redis:
+    image: redis:latest
+    ports:
+      - 6379:6379
+  
+  
+  blog.gateway:
+    image: blog.gateway
+    build:
+      context: .
+      dockerfile: Blog.GateWay/Dockerfile
+
+networks:
+  proxybackend:
+    name: proxybackend
+    driver: bridge
+  elastic:
+    driver: bridge
+
+volumes:
+  postgres_data:
+  redis-data:
+
+  identityapi:
+    image: identityapi
+    build:
+      context: .
+      dockerfile: IdentityAPI/Dockerfile
+
+  identity.api:
+    image: identity.api
+    build:
+      context: .
+      dockerfile: Identity.API/Dockerfile
+
+  web:
+    image: web
+    build:
+      context: .
+      dockerfile: Web/Dockerfile
+
+  identityapi:
+    image: identityapi
+    build:
+      context: .
+      dockerfile: IdentityApi/Dockerfile
