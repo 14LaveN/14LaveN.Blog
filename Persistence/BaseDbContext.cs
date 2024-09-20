@@ -78,7 +78,7 @@ public class BaseDbContext
             Maybe<TEntity>.None :
             Maybe<TEntity>
                 .From(await Set<TEntity>()
-                          .FirstOrDefaultAsync(e => e.Id == id) 
+                          .FirstOrDefaultAsync(e => e.Id == id.ToString()) 
             ?? throw new ArgumentNullException());
 
     /// <inheritdoc />

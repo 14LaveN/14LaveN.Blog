@@ -1,5 +1,6 @@
 using Application.Core.Behaviours;
 using ArticleAPI.Application.Commands;
+using ArticleAPI.Application.Queries;
 using FluentValidation;
 using MediatR.NotificationPublishers;
 
@@ -20,7 +21,9 @@ public static class MediatrExtensions
                 .RegisterServicesFromAssemblies(typeof(Update.Command).Assembly,
                     typeof(Update.CommandHandler).Assembly)
                 .RegisterServicesFromAssemblies(typeof(Delete.Command).Assembly,
-                    typeof(Delete.CommandHandler).Assembly);
+                    typeof(Delete.CommandHandler).Assembly)
+                .RegisterServicesFromAssemblies(typeof(GetAllArticles.Query).Assembly,
+                    typeof(GetAllArticles.QueryHandler).Assembly);
             
             x.AddOpenBehavior(typeof(QueryCachingBehavior<,>))
                 //TODO .AddOpenBehavior(typeof(IdentityIdempotentCommandPipelineBehavior<,>))

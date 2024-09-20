@@ -1,2 +1,3 @@
 obj\Debug\net8.0\Protos/Articles.cs \
-obj\Debug\net8.0\Protos/ArticlesGrpc.cs: Protos/articles.proto
+obj\Debug\net8.0\Protos/ArticlesGrpc.cs: C:/Users/ponom/.nuget/packages/grpc.tools/2.57.0/build/native/include/google/protobuf/timestamp.proto\
+ Protos/articles.proto

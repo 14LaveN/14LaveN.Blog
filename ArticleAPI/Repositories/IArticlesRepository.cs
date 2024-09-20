@@ -14,6 +14,8 @@ public interface IArticlesRepository
     
     Task<Result> Create(Article article);
 
+    Task<Maybe<IEnumerable<Article>>> GetAllArticles();
+
     Task<Maybe<Article>> GetById(Ulid articleId);
 
     Task<Result> Delete(Ulid articleId);

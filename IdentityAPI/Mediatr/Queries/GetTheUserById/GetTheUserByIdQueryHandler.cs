@@ -1,11 +1,12 @@
-using Identity.API.Contracts.Get;
 using Application.Core.Abstractions.Messaging;
 using Domain.Common.Core.Errors;
 using Domain.Common.Core.Primitives.Maybe;
 using Domain.Core.Exceptions;
+using Identity.API.Contracts.Get;
 using Identity.API.Domain.Repositories;
+using Identity.API.Mediatr.Queries.GetTheUserById;
 
-namespace Identity.API.Mediatr.Queries.GetTheUserById;
+namespace IdentityApi.Mediatr.Queries.GetTheUserById;
 
 /// <summary>
 /// Represents the <see cref="GetTheUserByIdQuery"/> handler.

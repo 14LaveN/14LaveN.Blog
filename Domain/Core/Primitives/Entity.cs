@@ -11,7 +11,7 @@ public abstract class Entity : IEquatable<Entity>
     /// Initializes a new instance of the <see cref="Entity"/> class.
     /// </summary>
     /// <param name="id">The entity identifier.</param>
-    protected Entity(Ulid id)
+    protected Entity(string id)
         : this()
     {
         Ensure.NotEmpty(id, "The identifier is required.", nameof(id));
@@ -32,7 +32,7 @@ public abstract class Entity : IEquatable<Entity>
     /// <summary>
     /// Gets or sets the entity identifier.
     /// </summary>
-    public Ulid Id { get; private set; }
+    public string Id { get; private set; }
 
     public Result.Result<string> CreateId()
     {
@@ -90,7 +90,7 @@ public abstract class Entity : IEquatable<Entity>
             return false;
         }
 
-        if (Id == Ulid.Empty || other.Id == Ulid.Empty)
+        if (Id == string.Empty || other.Id == string.Empty)
         {
             return false;
         }

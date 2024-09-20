@@ -105,7 +105,7 @@ public sealed class UserDbContext
         where TEntity : Entity
         => id == Ulid.Empty ?
             Maybe<TEntity>.None :
-            Maybe<TEntity>.From(await Set<TEntity>().FirstOrDefaultAsync(e => e.Id == id) 
+            Maybe<TEntity>.From(await Set<TEntity>().FirstOrDefaultAsync(e => e.Id == id.ToString()) 
             ?? throw new ArgumentNullException());
 
     /// <inheritdoc />

@@ -1,6 +1,5 @@
 using System.Text;
 using System.Text.Json;
-using Auth0.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.IdentityModel.Tokens;
@@ -34,13 +33,6 @@ internal static class DiAuthorization
         services.TryAddScoped<UserManager<User>>();
         
         services.AddHttpContextAccessor();
-        
-        //TODO services.AddAuth0WebAppAuthentication(options =>
-        //TODO {
-        //TODO     options.Domain = configuration["Auth0:Domain"];
-        //TODO     options.ClientId = configuration["Auth0:ClientId"];
-        //TODO });
-
         
         services.AddIdentity<User, IdentityRole<Ulid>>(options =>
             {
@@ -92,27 +84,6 @@ internal static class DiAuthorization
                     // Обработка событий аутентификации
                     options.Events = new OpenIdConnectEvents
                     {
-                        OnRedirectToIdentityProviderForSignOut = context =>
-                        {
-                            var logoutUri = $"https://{configuration["Auth0:Domain"]}/v2/logout?client_id={configuration["Auth0:ClientId"]}";
-
-                            var postLogoutUri = context.Properties.RedirectUri;
-                            if (!string.IsNullOrEmpty(postLogoutUri))
-                            {
-                                if (postLogoutUri.StartsWith("/"))
-                                {
-                                    var request = context.Request;
-                                    postLogoutUri = request.Scheme + "://" + request.Host + request.PathBase + postLogoutUri;
-                                }
-                                logoutUri += $"&returnTo={Uri.EscapeDataString(postLogoutUri)}";
-                            }
-
-                            context.Response.Redirect(logoutUri);
-                            context.HandleResponse();
-
-                            return Task.CompletedTask;
-                        },
-                        
                         OnTokenValidated = async context =>
                         {
                             // Логика обработки после валидации токена
@@ -134,9 +105,10 @@ internal static class DiAuthorization
                 options.Audience = "identityApi"; 
                 options.TokenValidationParameters = new TokenValidationParameters
                 {
-                    ValidIssuer = "https://dev-l8s5s4hhicih7rqg.us.auth0.com/",
-                    ValidAudience = "https://localhost:6556",
-                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("NMEQEvJzylfDMBaS3fsgG48g4LDBdGnu"))
+                    ValidIssuer = "https://localhost:5001",
+                    ValidAudience = "identityApi",
+                    IssuerSigningKey =
+                        new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration["Jwt:Secret"]!))
                 };
                 
                 options.Events = new JwtBearerEvents
@@ -174,6 +146,8 @@ internal static class DiAuthorization
                 };
             });
         
+        
+        
         services.AddIdentityServer()
             .AddAspNetIdentity<User>()
             .AddInMemoryApiResources(IdentityConfiguration.ApiResources)
@@ -187,6 +161,8 @@ internal static class DiAuthorization
         services.AddOptions<JwtOptions>()
             .BindConfiguration(JwtOptions.SettingsKey)
             .ValidateOnStart();
+        
+        services.AddAuthorization();
         
         services.AddCors(options => options.AddDefaultPolicy(corsPolicyBuilder =>
             corsPolicyBuilder.WithOrigins("https://localhost:44442", "http://localhost:44460")

@@ -55,6 +55,110 @@
             <param name="serviceBinder">Service methods will be bound by calling <c>AddMethod</c> on this object.</param>
             <param name="serviceImpl">An object implementing the server-side handling logic.</param>
         </member>
+        <member name="T:ArticleAPI.ArticlesReflection">
+            <summary>Holder for reflection information generated from Protos/articles.proto</summary>
+        </member>
+        <member name="P:ArticleAPI.ArticlesReflection.Descriptor">
+            <summary>File descriptor for Protos/articles.proto</summary>
+        </member>
+        <member name="F:ArticleAPI.CreateRequest.DescriptionFieldNumber">
+            <summary>Field number for the "description" field.</summary>
+        </member>
+        <member name="F:ArticleAPI.CreateRequest.TitleFieldNumber">
+            <summary>Field number for the "title" field.</summary>
+        </member>
+        <member name="T:ArticleAPI.GetArticlesRequest">
+            <summary>
+            Определение запроса (может быть пустым или с параметрами)
+            </summary>
+        </member>
+        <member name="T:ArticleAPI.ArticleDtoObject">
+            <summary>
+            Определение статьи
+            </summary>
+        </member>
+        <member name="F:ArticleAPI.ArticleDtoObject.TitleFieldNumber">
+            <summary>Field number for the "title" field.</summary>
+        </member>
+        <member name="F:ArticleAPI.ArticleDtoObject.DescriptionFieldNumber">
+            <summary>Field number for the "description" field.</summary>
+        </member>
+        <member name="F:ArticleAPI.ArticleDtoObject.CreatedAtFieldNumber">
+            <summary>Field number for the "created_at" field.</summary>
+        </member>
+        <member name="T:ArticleAPI.GetArticlesResponse">
+            <summary>
+            Определение ответа, который будет содержать массив статей
+            </summary>
+        </member>
+        <member name="F:ArticleAPI.GetArticlesResponse.ArticlesFieldNumber">
+            <summary>Field number for the "articles" field.</summary>
+        </member>
+        <member name="T:ArticleAPI.Articles">
+            <summary>
+            The greeting service definition.
+            </summary>
+        </member>
+        <member name="P:ArticleAPI.Articles.Descriptor">
+            <summary>Service descriptor</summary>
+        </member>
+        <member name="T:ArticleAPI.Articles.ArticlesClient">
+            <summary>Client for Articles</summary>
+        </member>
+        <member name="M:ArticleAPI.Articles.ArticlesClient.#ctor(Grpc.Core.ChannelBase)">
+            <summary>Creates a new client for Articles</summary>
+            <param name="channel">The channel to use to make remote calls.</param>
+        </member>
+        <member name="M:ArticleAPI.Articles.ArticlesClient.#ctor(Grpc.Core.CallInvoker)">
+            <summary>Creates a new client for Articles that uses a custom <c>CallInvoker</c>.</summary>
+            <param name="callInvoker">The callInvoker to use to make remote calls.</param>
+        </member>
+        <member name="M:ArticleAPI.Articles.ArticlesClient.#ctor">
+            <summary>Protected parameterless constructor to allow creation of test doubles.</summary>
+        </member>
+        <member name="M:ArticleAPI.Articles.ArticlesClient.#ctor(Grpc.Core.ClientBase.ClientBaseConfiguration)">
+            <summary>Protected constructor to allow creation of configured clients.</summary>
+            <param name="configuration">The client configuration.</param>
+        </member>
+        <member name="M:ArticleAPI.Articles.ArticlesClient.CreateArticle(ArticleAPI.CreateRequest,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)">
+            <summary>
+            Sends a greeting
+            </summary>
+            <param name="request">The request to send to the server.</param>
+            <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+            <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+            <param name="cancellationToken">An optional token for canceling the call.</param>
+            <returns>The response received from the server.</returns>
+        </member>
+        <member name="M:ArticleAPI.Articles.ArticlesClient.CreateArticle(ArticleAPI.CreateRequest,Grpc.Core.CallOptions)">
+            <summary>
+            Sends a greeting
+            </summary>
+            <param name="request">The request to send to the server.</param>
+            <param name="options">The options for the call.</param>
+            <returns>The response received from the server.</returns>
+        </member>
+        <member name="M:ArticleAPI.Articles.ArticlesClient.CreateArticleAsync(ArticleAPI.CreateRequest,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)">
+            <summary>
+            Sends a greeting
+            </summary>
+            <param name="request">The request to send to the server.</param>
+            <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+            <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+            <param name="cancellationToken">An optional token for canceling the call.</param>
+            <returns>The call object.</returns>
+        </member>
+        <member name="M:ArticleAPI.Articles.ArticlesClient.CreateArticleAsync(ArticleAPI.CreateRequest,Grpc.Core.CallOptions)">
+            <summary>
+            Sends a greeting
+            </summary>
+            <param name="request">The request to send to the server.</param>
+            <param name="options">The options for the call.</param>
+            <returns>The call object.</returns>
+        </member>
+        <member name="M:ArticleAPI.Articles.ArticlesClient.NewInstance(Grpc.Core.ClientBase.ClientBaseConfiguration)">
+            <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
+        </member>
         <member name="P:IntegrationEventContext.Program">
             <summary>
             Defines the source generated JSON serialization contract metadata for a given type.

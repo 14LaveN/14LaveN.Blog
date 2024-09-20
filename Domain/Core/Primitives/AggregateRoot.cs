@@ -12,7 +12,7 @@ public abstract class AggregateRoot : Entity
     /// Initializes a new instance of the <see cref="AggregateRoot"/> class.
     /// </summary>
     /// <param name="id">The aggregate root identifier.</param>
-    protected AggregateRoot(Ulid id)
+    protected AggregateRoot(string id)
         : base(id)
     {
     }
