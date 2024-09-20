@@ -28,11 +28,11 @@ public static class Create
             CancellationToken cancellationToken)
         {
             Result<Article> articleResult = Article.Create(request.Title, request.Description, Ulid.NewUlid());
-
+            
             Article article = articleResult.IsSuccess 
                 ? articleResult.Value 
                 : throw new DomainException(DomainErrors.Article.HasAlreadyTaken);
-
+            
             Result result = await articleServices.ArticlesRepository.Create(article);
 
             return new BaseResponse<Result>

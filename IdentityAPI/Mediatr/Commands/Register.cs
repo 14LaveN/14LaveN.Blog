@@ -164,11 +164,6 @@ public static class Register
                     claims = await user.GenerateClaims(dbContext, _jwtOptions, cancellationToken);
                     
                     await _signInManager.SignInAsync(user, false, claims);
-
-                    await httpContextAccessor.HttpContext?.ChallengeAsync(GoogleDefaults.AuthenticationScheme, new AuthenticationProperties
-                    {
-                        RedirectUri = "https://localhost:5001/api/v1/google-response"
-                    })!;
                     
                     logger.LogInformation($"User authorized - {user.UserName} {DateTime.UtcNow}");
                 }

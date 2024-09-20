@@ -15,9 +15,13 @@ using ServiceDefaults;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddControllers();
+
 builder.AddApplicationServices(builder.WebHost);  
 builder.AddServiceDefaults();
 builder.Host.UseSerilog(Logging.ConfigureLogger);
+
+builder.Services.AddScoped<ArticlesService>();
 
 builder.Services.AddGrpc();
 
@@ -67,6 +71,8 @@ void MapEndpoints()
     });
 
     app.MapMetrics();
+
+    app.MapControllers();
     
     app
         .MapDefaultEndpoints()

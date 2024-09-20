@@ -832,23 +832,6 @@
         <member name="P:Identity.API.Mediatr.Queries.GetTheUserById.GetTheUserByIdQuery.UserId">
             <summary>The user identifier.</summary>
         </member>
-        <member name="T:Identity.API.Mediatr.Queries.GetTheUserById.GetTheUserByIdQueryHandler">
-            <summary>
-            Represents the <see cref="T:Identity.API.Mediatr.Queries.GetTheUserById.GetTheUserByIdQuery"/> handler.
-            </summary>
-            <param name="userRepository">The user repository.</param>
-            <param name="logger">The logger.</param>
-        </member>
-        <member name="M:Identity.API.Mediatr.Queries.GetTheUserById.GetTheUserByIdQueryHandler.#ctor(Identity.API.Domain.Repositories.IUserRepository,Microsoft.Extensions.Logging.ILogger{Identity.API.Mediatr.Queries.GetTheUserById.GetTheUserByIdQueryHandler})">
-            <summary>
-            Represents the <see cref="T:Identity.API.Mediatr.Queries.GetTheUserById.GetTheUserByIdQuery"/> handler.
-            </summary>
-            <param name="userRepository">The user repository.</param>
-            <param name="logger">The logger.</param>
-        </member>
-        <member name="M:Identity.API.Mediatr.Queries.GetTheUserById.GetTheUserByIdQueryHandler.Handle(Identity.API.Mediatr.Queries.GetTheUserById.GetTheUserByIdQuery,System.Threading.CancellationToken)">
-            <inheritdoc />
-        </member>
         <member name="T:Identity.API.Migrations.Initial">
             <inheritdoc />
         </member>
@@ -1368,6 +1351,23 @@
             <summary>
             Initializes a new instance of the <see cref="T:IdentityApi.Mediatr.Commands.ChangePassword.CommandValidator"/> class.
             </summary>
+        </member>
+        <member name="T:IdentityApi.Mediatr.Queries.GetTheUserById.GetTheUserByIdQueryHandler">
+            <summary>
+            Represents the <see cref="T:Identity.API.Mediatr.Queries.GetTheUserById.GetTheUserByIdQuery"/> handler.
+            </summary>
+            <param name="userRepository">The user repository.</param>
+            <param name="logger">The logger.</param>
+        </member>
+        <member name="M:IdentityApi.Mediatr.Queries.GetTheUserById.GetTheUserByIdQueryHandler.#ctor(Identity.API.Domain.Repositories.IUserRepository,Microsoft.Extensions.Logging.ILogger{IdentityApi.Mediatr.Queries.GetTheUserById.GetTheUserByIdQueryHandler})">
+            <summary>
+            Represents the <see cref="T:Identity.API.Mediatr.Queries.GetTheUserById.GetTheUserByIdQuery"/> handler.
+            </summary>
+            <param name="userRepository">The user repository.</param>
+            <param name="logger">The logger.</param>
+        </member>
+        <member name="M:IdentityApi.Mediatr.Queries.GetTheUserById.GetTheUserByIdQueryHandler.Handle(Identity.API.Mediatr.Queries.GetTheUserById.GetTheUserByIdQuery,System.Threading.CancellationToken)">
+            <inheritdoc />
         </member>
         <member name="T:IdentityApi.Persistence.Configurations.PermissionConfiguration">
             <summary>

@@ -77,7 +77,7 @@ public sealed class Article
     public stringMod Title { get; private set; }
     public stringMod Description { get; private set; }
 
-    public stringMod AuthorName { get; private set; }
+    public stringMod AuthorName { get; private set; } = "fdsfdsfsdf";
     public Ulid AuthorId { get; private set; }
 
     public DateTime CreatedAt { get; init; }

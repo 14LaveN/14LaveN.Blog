@@ -11,7 +11,7 @@
 
     <ItemGroup>
         <Protobuf Include="Protos\greet.proto" GrpcServices="Server"/>
-        <Protobuf Include="Protos\articles.proto" GrpcServices="Server" />
+        <Protobuf Include="Protos\articles.proto" GrpcServices="Client" />
 
     </ItemGroup>
 
@@ -44,11 +44,11 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Application\Queries\" />
       <Folder Include="Contracts\Create\" />
       <Folder Include="Contracts\Delete\" />
       <Folder Include="Contracts\GetById\" />
       <Folder Include="Contracts\Update\" />
+      <Folder Include="Controllers\" />
     </ItemGroup>
 
 </Project>

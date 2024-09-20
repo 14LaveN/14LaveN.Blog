@@ -94,6 +94,33 @@ internal sealed class ArticlesRepository(IHostEnvironment environment)
         }
     }
 
+    public async Task<Maybe<IEnumerable<Article>>> GetAllArticles()
+    {
+        await using NpgsqlConnection connection = DbConnection.CreateConnection(environment);
+        await connection.OpenAsync();
+        
+        NpgsqlTransaction transaction = await connection.BeginTransactionAsync(IsolationLevel.Serializable);
+
+        try
+        {
+            string? sql = $"""
+                           SELECT * FROM dbo.articles
+                           """;
+            
+
+            IEnumerable<Article>? result = await connection.QueryAsync<Article>(sql);
+            
+            await transaction.CommitAsync();
+
+            return Maybe<IEnumerable<Article>>.From(result);
+        }
+        catch (Exception)
+        {
+            await transaction.RollbackAsync();
+            return Maybe<Maybe<IEnumerable<Article>>>.None;
+        }
+    }
+
     public async Task<Maybe<Article>> GetById(Ulid articleId)
     {
         await using NpgsqlConnection connection = DbConnection.CreateConnection(environment);
@@ -135,7 +162,7 @@ internal sealed class ArticlesRepository(IHostEnvironment environment)
         try
         {
             string? sql = $"""
-                             DELETE FROM dbo.articles WHERE id = @Id}
+                             DELETE FROM dbo.articles WHERE id = @Id
                            """;
 
             var parameters = new

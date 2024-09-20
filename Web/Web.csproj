@@ -4,13 +4,19 @@
         <TargetFramework>net8.0</TargetFramework>
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
-        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     </PropertyGroup>
+    
+    <ItemGroup>      
+        <Protobuf Include="Protos\articles.proto" GrpcServices="Client" />
+    </ItemGroup>
+    
+    <ItemGroup>
+      <PackageReference Include="Refit" Version="7.2.1" />
+      <PackageReference Include="Refit.HttpClientFactory" Version="7.2.1" />
+    </ItemGroup>
 
     <ItemGroup>
-      <Content Include="..\.dockerignore">
-        <Link>.dockerignore</Link>
-      </Content>
+      <ProjectReference Include="..\ArticleAPI\ArticleAPI.csproj" />
     </ItemGroup>
 
 </Project>

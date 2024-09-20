@@ -1,6 +1,10 @@
 ﻿@page "/"
 @using ArticleAPI.Controllers
-@inject ArticlesService RestClient
+@using ArticleAPI
+@using ArticleAPI.Model
+@using Duende.IdentityServer.Extensions
+@using Interfaces
+@inject IArticlesApi RestClient
 
 <PageTitle>Home</PageTitle>
 
@@ -65,7 +69,7 @@
 
     protected override async Task OnInitializedAsync()
     {
-        _articleDtoObjects = await RestClient.GetArticles();
+        _articleDtoObjects = await RestClient.GetArticlesAsync();
         _objectsInPage = _articleDtoObjects.Take(3).ToArray();
     }
 

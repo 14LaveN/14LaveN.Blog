@@ -1,15 +1,17 @@
 using ArticleAPI.Services;
 using Microsoft.AspNetCore.Mvc;
-using ArticlesGrpcService = ArticleAPI.Articles.ArticlesClient;
 
 namespace ArticleAPI.Controllers;
 
-public class ArticlesService(ArticlesGrpcService grpcClient)
+[ApiController]
+[Route("[controller]")]
+public class ArticlesController(Articles.ArticlesClient articlesClient) : Controller
 {
+    [HttpGet]
     public async Task<IEnumerable<ArticleDtoObject>> GetArticles()
     {
         var request = new GetArticlesRequest();
-        var response = await grpcClient.GetArticles(request);
+        var response = await articlesClient.GetArticlesAsync(request);
         
         return response.Articles;
     }

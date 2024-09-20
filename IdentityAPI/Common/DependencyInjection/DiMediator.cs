@@ -10,6 +10,7 @@ using IdentityApi.Domain.Events.User;
 using IdentityApi.IntegrationEvents.User.Events.UserCreated;
 using IdentityApi.IntegrationEvents.User.Handlers.UserCreated;
 using IdentityApi.Mediatr.Commands;
+using IdentityApi.Mediatr.Queries.GetTheUserById;
 using MediatR.NotificationPublishers;
 
 namespace Identity.API.Common.DependencyInjection;
