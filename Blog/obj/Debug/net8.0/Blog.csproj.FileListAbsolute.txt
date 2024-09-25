@@ -26,10 +26,10 @@ G:\DotNetProjects\14LaveN.Blog\Blog\obj\Debug\net8.0\staticwebassets\msbuild.bui
 G:\DotNetProjects\14LaveN.Blog\Blog\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Blog.props
 G:\DotNetProjects\14LaveN.Blog\Blog\obj\Debug\net8.0\staticwebassets.pack.json
 G:\DotNetProjects\14LaveN.Blog\Blog\obj\Debug\net8.0\scopedcss\bundle\Blog.styles.css
-G:\DotNetProjects\14LaveN.Blog\Blog\obj\Debug\net8.0\Blog.csproj.CopyComplete
 G:\DotNetProjects\14LaveN.Blog\Blog\obj\Debug\net8.0\Blog.dll
 G:\DotNetProjects\14LaveN.Blog\Blog\obj\Debug\net8.0\refint\Blog.dll
 G:\DotNetProjects\14LaveN.Blog\Blog\obj\Debug\net8.0\Blog.pdb
 G:\DotNetProjects\14LaveN.Blog\Blog\obj\Debug\net8.0\Blog.genruntimeconfig.cache
 G:\DotNetProjects\14LaveN.Blog\Blog\obj\Debug\net8.0\ref\Blog.dll
 G:\DotNetProjects\14LaveN.Blog\Blog\obj\Debug\net8.0\Blog.sourcelink.json
+G:\DotNetProjects\14LaveN.Blog\Blog\obj\Debug\net8.0\Blog.csproj.Up2Date

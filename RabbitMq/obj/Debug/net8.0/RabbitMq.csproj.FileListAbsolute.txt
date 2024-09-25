@@ -13,8 +13,8 @@ G:\DotNetProjects\14LaveN.Blog\RabbitMq\obj\Debug\net8.0\RabbitMq.AssemblyInfoIn
 G:\DotNetProjects\14LaveN.Blog\RabbitMq\obj\Debug\net8.0\RabbitMq.AssemblyInfo.cs
 G:\DotNetProjects\14LaveN.Blog\RabbitMq\obj\Debug\net8.0\RabbitMq.csproj.CoreCompileInputs.cache
 G:\DotNetProjects\14LaveN.Blog\RabbitMq\obj\Debug\net8.0\RabbitMq.sourcelink.json
-G:\DotNetProjects\14LaveN.Blog\RabbitMq\obj\Debug\net8.0\RabbitMq.csproj.CopyComplete
 G:\DotNetProjects\14LaveN.Blog\RabbitMq\obj\Debug\net8.0\RabbitMq.dll
 G:\DotNetProjects\14LaveN.Blog\RabbitMq\obj\Debug\net8.0\refint\RabbitMq.dll
 G:\DotNetProjects\14LaveN.Blog\RabbitMq\obj\Debug\net8.0\RabbitMq.pdb
 G:\DotNetProjects\14LaveN.Blog\RabbitMq\obj\Debug\net8.0\ref\RabbitMq.dll
+G:\DotNetProjects\14LaveN.Blog\RabbitMq\obj\Debug\net8.0\RabbitMq.csproj.Up2Date

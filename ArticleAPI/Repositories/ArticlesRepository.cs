@@ -65,18 +65,20 @@ internal sealed class ArticlesRepository(IHostEnvironment environment)
         try
         {
             string? sql = $"""
-                        INSERT INTO dbo.articles (id, title, description, author_name, author_id, created_at, modified_at)
-                        VALUES (@Id, @Title, @Description, @AuthorName, @AuthorId, @CreatedAt, @ModifiedAt) 
+                        INSERT INTO dbo.articles (id, title, description, author_name, author_id, created_at, modified_at, picture_link, content)
+                        VALUES (@Id, @Title, @Description, @AuthorName, @AuthorId, @Created_At, @ModifiedAt, @Picture_Link, @Content) 
                       """;
 
             var parameters = new
             {
+                Content = article.Content.Value,
+                Picture_Link = article.Picture_Link.Value,
                 Id = article.CreateId().Value,
                 Title = article.Title.Value,
                 Description = article.Description.Value,
-                AuthorName = article.AuthorName,
+                AuthorName = article.AuthorName.Value,
                 AuthorId = article.CreateId().Value,
-                CreatedAt = DateTime.UtcNow,
+                Created_At = DateTime.UtcNow,
                 ModifiedAt = (DateTime?)default
             };
 
@@ -106,7 +108,6 @@ internal sealed class ArticlesRepository(IHostEnvironment environment)
             string? sql = $"""
                            SELECT * FROM dbo.articles
                            """;
-            
 
             IEnumerable<Article>? result = await connection.QueryAsync<Article>(sql);
             
@@ -136,7 +137,7 @@ internal sealed class ArticlesRepository(IHostEnvironment environment)
 
             var parameters = new
             {
-                Id = articleId
+                Id = articleId.ToString()
             };
 
             Article? result = await connection.QueryFirstOrDefaultAsync<Article>(sql, parameters);

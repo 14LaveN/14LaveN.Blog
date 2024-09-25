@@ -37,9 +37,9 @@ internal sealed class MetricsRepository
     {
         var metrics = await _commonMongoDbContext.Metrics
             .FindAsync(x=>
-                x.CreatedAt.Day == DateTime.Today.Day 
-                && x.CreatedAt.Month == DateTime.Today.Month
-                && x.CreatedAt.Year == DateTime.Today.Year
+                x.Created_At.Day == DateTime.Today.Day 
+                && x.Created_At.Month == DateTime.Today.Month
+                && x.Created_At.Year == DateTime.Today.Year
                 && x.Name == metricName)
             .Result
             .ToListAsync();

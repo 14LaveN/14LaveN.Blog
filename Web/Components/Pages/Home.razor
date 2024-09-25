@@ -1,75 +1,145 @@
 ﻿@page "/"
+@using System.Text.Json
 @using ArticleAPI
 @using ArticleAPI.Model
+@using Domain.Common.Core.Primitives.Maybe
 @using Duende.IdentityServer.Extensions
 @using Interfaces
+@using Refit
+@inject NavigationManager Navigation
 @inject IArticlesApi RestClient
+@inject HttpClient httpClient
 
-<PageTitle>Home</PageTitle>
+<PageTitle>Articles</PageTitle>
+
+<style>
+    body {
+        background: linear-gradient(135deg, #f8cdda 0%, #f7cfd1 100%);
+        color: #000; /* Цвет текста черный */
+        font-family: 'Arial Black', sans-serif;
+    }
+
+    .container {
+        padding: 50px;
+        border-radius: 10px;
+        background-color: #f4bba1 /* Чуть более прозрачный белый */
+    }
+
+    .hover-effect {
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .hover-effect:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+    
+    .site-title-onpage {
+        font-size: 60px;    
+        font-family: "Arial Black";
+    }
+    
+    .social-icons {
+        margin-top: 20px;
+    }
+    .social-icons a {
+        margin: 0 10px;
+        color: #d48b58; /* Цвет иконок */
+        font-size: 24px;
+        transition: color 0.3s;
+    }
+    .social-icons a:hover {
+        color: #a0522d; /* Цвет при наведении */
+    }
+
+    .card {
+        border: none; /* Убираем границу карты */
+        background-color: #f4b899;
+        color: black;
+        font-family: "Arial Black";
+    }
+
+    .card-title {
+        font-weight: bold; /* Сделаем заголовки статей более заметными */
+    }
+
+    .btn-primary {
+        background-color: #d48b58; /* Цвет кнопки */
+        border: none;
+    }
+    .btn-primary:hover {
+        background-color: #a0522d; /* Цвет кнопки при наведении */
+    }
+</style>
 
 <div class="container mt-5">
     <div class="row justify-content-center">
         <div class="col-md-8 text-center">
-            <h1 class="display-4">Articles</h1>
-            <p class="lead">Ponomarev</p>
+            <h1 class="site-title-onpage display-4">Three last articles</h1>
+        </div>
+        <div class="social-icons text-center">
+            <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://medium.com" target="_blank"><i class="fab fa-medium"></i></a>
+            <a href="https://t.me" target="_blank"><i class="fab fa-telegram"></i></a>
         </div>
     </div>
     
-    
-    @if (!_articleDtoObjects.IsNullOrEmpty())
+    @if (!_articlesDtoObjects.IsNullOrEmpty())
     {
         <div class="row mt-4">
-            <!-- Пример карточек статей -->
-            <div class="col-md-4">
-                <div class="card shadow-sm mb-4">
-                    <img class="card-img-top" src="https://via.placeholder.com/400x200" alt="Article Image">
-                    <div class="card-body">
-                        <h5 class="card-title">@_objectsInPage[0].Title</h5>
-                        <p class="card-text">@_objectsInPage[0].Description.</p>
-                        <a href="#" class="btn btn-primary">Read more</a>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="col-md-4">
-                <div class="card shadow-sm mb-4">
-                    <img class="card-img-top" src="https://via.placeholder.com/400x200" alt="Article Image">
-                    <div class="card-body">
-                        <h5 class="card-title">@_objectsInPage[1].Title</h5>
-                        <p class="card-text">@_objectsInPage[1].Description.</p>
-                        <a href="#" class="btn btn-primary">Read more</a>
-                    </div>
-                </div>
-            </div>
-            
-            @if (_objectsInPage.Length is not 2)
+            @for (int i = 0; i < _articlesDtoObjects.Length && i < 3; i++)
             {
-                <div class="col-md-4">
-                    <div class="card shadow-sm mb-4">
-                        <img class="card-img-top" src="https://via.placeholder.com/400x200" alt="Article Image">
-                        <div class="card-body">
-                            <h5 class="card-title">@_objectsInPage[2].Title</h5>
-                            <p class="card-text">@_objectsInPage[2].Description.</p>
-                            <a href="#" class="btn btn-primary">Read more</a>
+                if (_articlesDtoObjects[i].Picture_Link is null)
+                {
+                    <div class="col-md-4">
+                        <div class="card shadow-sm mb-4 hover-effect">
+                            <img class="card-img-top" src="/pictureRest.jpg" alt="Article Image">
+                            <div class="card-body">
+                                <h5 class="card-title">@_articlesDtoObjects[i].Title</h5>
+                                <p class="card-text">@_articlesDtoObjects[i].Description</p>
+                                <a href="@($"/article/{_articlesDtoObjects[i].ArticleId}")" class="btn btn-primary">Read more</a>
+                            </div>
                         </div>
                     </div>
-                </div>
+                }
+                else
+                {
+                    <div class="col-md-4">
+                        <div class="card shadow-sm mb-4 hover-effect">
+                            <img class="card-img-top" src="@_articlesDtoObjects[i].Picture_Link" alt="Article Image">
+                            <div class="card-body">
+                                <h5 class="card-title">@_articlesDtoObjects[i].Title</h5>
+                                <p class="card-text">@_articlesDtoObjects[i].Description</p>
+                                <a href="@($"/article/{_articlesDtoObjects[i].ArticleId}")" class="btn btn-primary">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                }
             }
         </div>
-        
-        
+    }
+    else
+    {
+        <div class="text-center">
+            <p class="lead text-muted">No articles found.</p>
+        </div>
     }
 </div>
 
 @code
 {
-    private IEnumerable<ArticleDtoObject> _articleDtoObjects;
-    private ArticleDtoObject[] _objectsInPage;
+    private ArticleDto[]? _articlesDtoObjects;
+
+
 
     protected override async Task OnInitializedAsync()
-    {
-        _articleDtoObjects = await RestClient.GetArticlesAsync();
-        _objectsInPage = _articleDtoObjects.Take(3).ToArray();
-    }
+    { 
+        var response = await httpClient.GetAsync("https://localhost:6001/api/v1/art");
 
+        if (response.IsSuccessStatusCode)
+        {
+            var str = await response.Content.ReadAsStringAsync();
+            _articlesDtoObjects = JsonSerializer.Deserialize<ArticleDto[]>(str);
+            _articlesDtoObjects = _articlesDtoObjects?.TakeLast(3).ToArray();
+        }
+    }
 }

@@ -23,5 +23,5 @@ public interface IBaseResponse<T>
     /// <summary>
     /// Gets or sets data.
     /// </summary>
-    public Result<T> Data { get; set; }
+    public Result Data { get; set; }
 }

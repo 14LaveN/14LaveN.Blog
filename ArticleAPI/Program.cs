@@ -1,12 +1,10 @@
 using System.Text.Json.Serialization;
 using Application.ApiHelpers.Extensions;
 using ArticleAPI.Extensions;
-using ArticleAPI.Services;
 using AspNetCore.Serilog.RequestLoggingMiddleware;
 using Common.Logging;
 using HealthChecks.UI.Client;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
-using Microsoft.AspNetCore.HttpOverrides;
 using Prometheus;
 using Serilog;
 using ServiceDefaults;
@@ -15,15 +13,10 @@ using ServiceDefaults;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddControllers();
-
 builder.AddApplicationServices(builder.WebHost);  
 builder.AddServiceDefaults();
+
 builder.Host.UseSerilog(Logging.ConfigureLogger);
-
-builder.Services.AddScoped<ArticlesService>();
-
-builder.Services.AddGrpc();
 
 #endregion
 
@@ -55,11 +48,7 @@ app.UseSerilogRequestLogging();
 
 app.UseCustomMiddlewares(app.Logger);
 
-// Configure the HTTP request pipeline.
-app.MapGrpcService<GreeterService>();
-app.MapGrpcService<ArticlesService>();
-
-await app.RunAsync();
+app.Run();
 
 void MapEndpoints()
 {
@@ -71,8 +60,6 @@ void MapEndpoints()
     });
 
     app.MapMetrics();
-
-    app.MapControllers();
     
     app
         .MapDefaultEndpoints()

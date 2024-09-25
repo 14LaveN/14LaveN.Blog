@@ -10,7 +10,7 @@ public sealed class WelcomeEmail
     /// </summary>
     /// <param name="emailTo">The email receiver.</param>
     /// <param name="name">The name.</param>
-    public WelcomeEmail(string emailTo, string name)
+    public WelcomeEmail(string? emailTo, string name)
     {
         EmailTo = emailTo;
         Name = name;
@@ -19,7 +19,7 @@ public sealed class WelcomeEmail
     /// <summary>
     /// Gets the email receiver.
     /// </summary>
-    public string EmailTo { get; }
+    public string? EmailTo { get; }
 
     /// <summary>
     /// Gets the name.

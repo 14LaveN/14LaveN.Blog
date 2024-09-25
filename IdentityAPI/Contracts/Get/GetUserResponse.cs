@@ -6,9 +6,9 @@ namespace Identity.API.Contracts.Get;
 /// <param name="FullName">The full name.</param>
 /// <param name="UserName">The user name.</param>
 /// <param name="EmailAddress">The email address.</param>
-/// <param name="CreatedAt">The date/time creation.</param>
+/// <param name="Created_At">The date/time creation.</param>
 public sealed record GetUserResponse(
     string FullName,
     string UserName,
     string EmailAddress,
-    DateTime CreatedAt);
+    DateTime Created_At);

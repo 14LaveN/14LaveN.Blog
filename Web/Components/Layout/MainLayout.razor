@@ -1,18 +1,33 @@
 ﻿@inherits LayoutComponentBase
 
 <div class="page">
-    <div class="sidebar">
-        <NavMenu />
-    </div>
-
     <main>
-        <div class="top-row px-4">
-            <a href="https://learn.microsoft.com/aspnet/core/" target="_blank">About</a>
+        <div class="top-row">
+            <a href="https://learn.microsoft.com/aspnet/core/" target="_blank" class="btn btn-link">About</a>
+            <h1 class="site-title">Ponomarev</h1>
         </div>
 
         <article class="content px-4">
             @Body
         </article>
+
+        <div class="social-links text-center mt-5">
+            <h3 class="text">Follow Us</h3>
+            <div class="d-flex justify-content-center">
+                <a href="https://github.com/14LaveN" target="_blank" class="social-icon mx-3">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2175/2175377.png" alt="GitHub" />
+                </a>
+                <a href="https://www.youtube.com/lavenso2625" target="_blank" class="social-icon mx-3">
+                    <img src="https://cdn-icons-png.flaticon.com/512/185/185983.png" alt="YouTube" />
+                </a>
+                <a href="https://www.youtube.com/lavenso2625" target="_blank" class="social-icon mx-3">
+                    <img src="https://pngicon.ru/file/uploads/telegram.png" alt="Telegram" />
+                </a>
+                <a href="https://medium.com/Ponomareff" target="_blank" class="social-icon mx-3">
+                    <img src="https://cdn4.iconfinder.com/data/icons/social-media-2210/24/Medium-512.png" alt="Medium" />
+                </a>
+            </div>
+        </div>
     </main>
 </div>
 
@@ -21,3 +36,76 @@
     <a href="" class="reload">Reload</a>
     <a class="dismiss">🗙</a>
 </div>
+
+<style>
+    body {
+        background-color: black;
+        background: linear-gradient(135deg, #ffe4b5, #ffde91);
+        color: #000000;
+        font-family: 'Arial', sans-serif;
+    }
+
+    .top-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #ff9f00; /* Мягкий оранжевый цвет */
+        color: white;
+        padding: 20px;
+        border-bottom: 2px solid #ff7f50;
+    }
+    
+    .text {
+        margin: 20px;
+        font-family: "Arial Black";
+        text-align: center;
+        text-decoration-color: black;
+    }
+
+    .site-title {
+        margin: 20px;
+        font-family: "Arial Black";
+        font-size: 1.8rem;
+        font-weight: bold;
+        transition: transform 0.2s;
+        color: black;
+        text-align: center; /* Выравнивание по левому краю */
+    }
+    
+    .site-title:hover {
+        transform: scale(1.05);
+    }
+
+    .content {
+        margin-top: 20px;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .social-links {
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+
+    .social-icon img {
+        width: 100px; /* Увеличение размера иконок */
+        height: auto;
+        transition: transform 0.2s;
+    }
+
+    .social-icon img:hover {
+        transform: scale(1.2); /* Увеличение при наведении */
+    }
+
+    .btn-link {
+        color: black;
+        font-weight: bold;
+        transition: transform 0.2s; /* Эффект увеличения */
+    }
+
+    .btn-link:hover {
+        transform: scale(1.05); /* Увеличение кнопки при наведении */
+    }
+</style>

@@ -1339,7 +1339,10 @@
           "prometheus-net.AspNetCore": "8.2.1"
         },
         "runtime": {
-          "Application.dll": {}
+          "Application.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Domain/1.0.0": {
@@ -1350,7 +1353,10 @@
           "Ulid": "1.3.4"
         },
         "runtime": {
-          "Domain.dll": {}
+          "Domain.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Infrastructure/1.0.0": {
@@ -1361,7 +1367,10 @@
           "Ulid": "1.3.4"
         },
         "runtime": {
-          "Infrastructure.dll": {}
+          "Infrastructure.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

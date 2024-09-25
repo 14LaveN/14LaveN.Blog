@@ -101,9 +101,9 @@ G:\DotNetProjects\14LaveN.Blog\ArticleAPI.FunctionalTests\obj\Debug\net8.0\Artic
 G:\DotNetProjects\14LaveN.Blog\ArticleAPI.FunctionalTests\obj\Debug\net8.0\ArticleAPI.FunctionalTests.AssemblyInfo.cs
 G:\DotNetProjects\14LaveN.Blog\ArticleAPI.FunctionalTests\obj\Debug\net8.0\ArticleAPI.FunctionalTests.csproj.CoreCompileInputs.cache
 G:\DotNetProjects\14LaveN.Blog\ArticleAPI.FunctionalTests\obj\Debug\net8.0\ArticleAPI.FunctionalTests.sourcelink.json
-G:\DotNetProjects\14LaveN.Blog\ArticleAPI.FunctionalTests\obj\Debug\net8.0\ArticleAPI.FunctionalTests.csproj.CopyComplete
 G:\DotNetProjects\14LaveN.Blog\ArticleAPI.FunctionalTests\obj\Debug\net8.0\ArticleAPI.FunctionalTests.dll
 G:\DotNetProjects\14LaveN.Blog\ArticleAPI.FunctionalTests\obj\Debug\net8.0\refint\ArticleAPI.FunctionalTests.dll
 G:\DotNetProjects\14LaveN.Blog\ArticleAPI.FunctionalTests\obj\Debug\net8.0\ArticleAPI.FunctionalTests.pdb
 G:\DotNetProjects\14LaveN.Blog\ArticleAPI.FunctionalTests\obj\Debug\net8.0\ArticleAPI.FunctionalTests.genruntimeconfig.cache
 G:\DotNetProjects\14LaveN.Blog\ArticleAPI.FunctionalTests\obj\Debug\net8.0\ref\ArticleAPI.FunctionalTests.dll
+G:\DotNetProjects\14LaveN.Blog\ArticleAPI.FunctionalTests\obj\Debug\net8.0\ArticleA.CB504335.Up2Date

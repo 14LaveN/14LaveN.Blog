@@ -23,7 +23,11 @@ internal static class Extensions
             options.Listen(IPAddress.Any, 6000, listenOptions =>
             {
                 listenOptions.UseConnectionLogging();
-                listenOptions.Protocols = HttpProtocols.Http1AndHttp2;
+            });
+            
+            options.Listen(IPAddress.Any, 6001, listenOptions =>
+            {
+                listenOptions.UseHttps();
             });
     
             options.Limits.MaxRequestBodySize = 10 * 1024; // 10 KB

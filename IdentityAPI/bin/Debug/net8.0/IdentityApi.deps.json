@@ -2012,14 +2012,7 @@
       },
       "System.Diagnostics.DiagnosticSource/8.0.0": {},
       "System.Diagnostics.EventLog/8.0.0": {},
-      "System.Formats.Asn1/8.0.1": {
-        "runtime": {
-          "lib/net8.0/System.Formats.Asn1.dll": {
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.724.31311"
-          }
-        }
-      },
+      "System.Formats.Asn1/8.0.1": {},
       "System.IdentityModel.Tokens.Jwt/8.0.2": {
         "dependencies": {
           "Microsoft.IdentityModel.JsonWebTokens": "8.0.2",
@@ -2062,12 +2055,6 @@
       "System.Text.Json/8.0.4": {
         "dependencies": {
           "System.Text.Encodings.Web": "8.0.0"
-        },
-        "runtime": {
-          "lib/net8.0/System.Text.Json.dll": {
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.724.31311"
-          }
         }
       },
       "System.Threading.Channels/8.0.0": {},
@@ -2110,7 +2097,10 @@
           "prometheus-net.AspNetCore": "8.2.1"
         },
         "runtime": {
-          "Application.dll": {}
+          "Application.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Common.Logging/1.0.0": {
@@ -2124,7 +2114,10 @@
           "Serilog.Sinks.Elasticsearch": "10.0.0"
         },
         "runtime": {
-          "Common.Logging.dll": {}
+          "Common.Logging.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Domain/1.0.0": {
@@ -2135,7 +2128,10 @@
           "Ulid": "1.3.4"
         },
         "runtime": {
-          "Domain.dll": {}
+          "Domain.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "EmailService/1.0.0": {
@@ -2144,7 +2140,10 @@
           "MimeKit": "4.7.1"
         },
         "runtime": {
-          "EmailService.dll": {}
+          "EmailService.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Infrastructure/1.0.0": {
@@ -2155,7 +2154,10 @@
           "Ulid": "1.3.4"
         },
         "runtime": {
-          "Infrastructure.dll": {}
+          "Infrastructure.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Kafka/1.0.0": {
@@ -2164,7 +2166,10 @@
           "Polly.Core": "8.4.1"
         },
         "runtime": {
-          "Kafka.dll": {}
+          "Kafka.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Persistence/1.0.0": {
@@ -2179,7 +2184,10 @@
           "OpenTelemetry.Extensions.Hosting": "1.9.0"
         },
         "runtime": {
-          "Persistence.dll": {}
+          "Persistence.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "RabbitMq/1.0.0": {
@@ -2191,7 +2199,10 @@
           "RabbitMQ.Client": "7.0.0-rc.11"
         },
         "runtime": {
-          "RabbitMq.dll": {}
+          "RabbitMq.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "ServiceDefaults/1.0.0": {
@@ -2210,7 +2221,10 @@
           "OpenTelemetry.Instrumentation.SqlClient": "1.9.0-beta.1"
         },
         "runtime": {
-          "ServiceDefaults.dll": {}
+          "ServiceDefaults.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

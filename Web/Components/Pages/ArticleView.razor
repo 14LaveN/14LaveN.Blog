@@ -1,0 +1,99 @@
+@page "/article/{id}"
+@using System.Globalization
+@using System.Text
+@using System.Text.Json
+@using ArticleAPI
+@using ArticleAPI.Model
+@using Domain.Enumerations
+@using Email.Contracts.Emails
+@using EmailService.Emails
+@using MongoDB.Driver.Linq
+@using Web.Interfaces
+@inject IArticlesApi RestApi;
+@inject HttpClient httpClient;
+@inject IEmailService EmailService;
+@rendermode InteractiveServer
+
+<head>
+    <link href="css/articleStyles.css" rel="stylesheet" />
+</head>
+
+<div class="container mt-5">
+    @if (_articleDtoObject is not null)
+    {
+        <div class="card article-card shadow-lg">
+            <div class="card-image-wrapper">
+                <img class="card-img-top" src="@(_articleDtoObject.Picture_Link ?? "/pictureRest.jpg")" alt="Article Image" />
+                <div class="img-overlay"></div>
+            </div>
+            <div class="card-body">
+                <h1 class="card-title display-4">@_articleDtoObject.Title</h1>
+                <h1 class="card-time">@TimeAdjuster(_articleDtoObject.Created_At)</h1>
+                <div class="card-texts">
+                    <p class="card-text lead">@_articleDtoObject.Description</p>
+                    <p class="article-content">
+                        @((MarkupString)_articleDtoObject.Content)
+                    </p>
+                </div>
+                <a href="javascript:history.back()" class="btn btn-secondary">Back</a>
+            </div>
+        </div>
+    }
+    else
+    {
+        <p class="text-center text-muted">Loading...</p>
+    }
+</div>
+
+<div class="email-box">
+    <label for="email">Subscribe to our newsletter</label>
+    <input type="email" id="email" placeholder="Enter your email" @bind="_email">
+    <button class="btn btn-primary mt-2" @onclick="OnClickedOnSendEmail">Subscribe</button>
+</div>
+
+@code {
+    [Parameter]
+    public string id { get; set; }
+
+    private ArticleDto? _articleDtoObject;
+    
+    private string? _email;
+    
+    public static MarkupString GenerateHtmlContent(string input)
+    {
+        var lines = input.Split(new[] { '\n', '\r' }, StringSplitOptions.RemoveEmptyEntries);
+        var htmlContent = new StringBuilder();
+
+        foreach (var line in lines)
+        {
+            if (line.StartsWith("# "))
+            {
+                htmlContent.Append($"<h1>{line.Substring(2)}</h1>");
+            }
+            else
+            {
+                htmlContent.Append($"<p>{line}</p>");
+            }
+        }
+
+        return (MarkupString)htmlContent.ToString();
+    }
+
+    private void OnClickedOnSendEmail()
+    {
+        EmailService.SendEmailAsync(new MailRequest(
+            _email, 
+            "Welcome to Ponomarev Blog.", 
+            "you will receive a newsletter")).ConfigureAwait(false);
+    }
+    
+    private string TimeAdjuster(DateTime time) =>
+        time.ToString("MMMM dd, yyyy", new CultureInfo("en-US"));
+
+    protected override async Task OnInitializedAsync()
+    {
+        var response = await httpClient.GetAsync($"https://localhost:6001/api/v1/articles/{id}");
+        var str = await response.Content.ReadAsStringAsync();
+        _articleDtoObject = JsonSerializer.Deserialize<ArticleDto>(str);
+    }
+}

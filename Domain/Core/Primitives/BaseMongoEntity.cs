@@ -41,7 +41,7 @@ public abstract class BaseMongoEntity
     /// <summary>
     /// Gets or sets date/time created at.
     /// </summary>
-    public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+    public DateTime Created_At { get; set; } = DateTime.UtcNow;
 
     public static bool operator ==(BaseMongoEntity a, BaseMongoEntity b)
     {

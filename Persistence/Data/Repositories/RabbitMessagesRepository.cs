@@ -36,9 +36,9 @@ internal sealed class RabbitMessagesRepository
         var rabbitMessages = await _commonMongoDbContext
             .RabbitMessages
             .FindAsync<RabbitMessage>(x=>
-                x.CreatedAt.Day == DateTime.Today.Day 
-                && x.CreatedAt.Month == DateTime.Today.Month
-                && x.CreatedAt.Year == DateTime.Today.Year).Result
+                x.Created_At.Day == DateTime.Today.Day 
+                && x.Created_At.Month == DateTime.Today.Month
+                && x.Created_At.Year == DateTime.Today.Year).Result
             .ToListAsync();
 
         return rabbitMessages;

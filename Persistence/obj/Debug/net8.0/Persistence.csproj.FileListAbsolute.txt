@@ -13,7 +13,6 @@ G:\DotNetProjects\14LaveN.Blog\Persistence\bin\Debug\net8.0\Application.pdb
 G:\DotNetProjects\14LaveN.Blog\Persistence\bin\Debug\net8.0\Kafka.pdb
 G:\DotNetProjects\14LaveN.Blog\Persistence\bin\Debug\net8.0\Domain.pdb
 G:\DotNetProjects\14LaveN.Blog\Persistence\obj\Debug\net8.0\Persistence.sourcelink.json
-G:\DotNetProjects\14LaveN.Blog\Persistence\obj\Debug\net8.0\Persistence.csproj.CopyComplete
 G:\DotNetProjects\14LaveN.Blog\Persistence\obj\Debug\net8.0\Persistence.dll
 G:\DotNetProjects\14LaveN.Blog\Persistence\obj\Debug\net8.0\refint\Persistence.dll
 G:\DotNetProjects\14LaveN.Blog\Persistence\obj\Debug\net8.0\Persistence.pdb
@@ -38,3 +37,4 @@ C:\Programming\DotNetProjects\14LaveN.Blog\Persistence\obj\Debug\net8.0\Persiste
 C:\Programming\DotNetProjects\14LaveN.Blog\Persistence\obj\Debug\net8.0\refint\Persistence.dll
 C:\Programming\DotNetProjects\14LaveN.Blog\Persistence\obj\Debug\net8.0\Persistence.pdb
 C:\Programming\DotNetProjects\14LaveN.Blog\Persistence\obj\Debug\net8.0\ref\Persistence.dll
+G:\DotNetProjects\14LaveN.Blog\Persistence\obj\Debug\net8.0\Persiste.61C28332.Up2Date
