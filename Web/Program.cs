@@ -1,4 +1,5 @@
-using ArticleAPI.Services;
+using Application.ApiHelpers.Middlewares.DelegatingHandlers;
+using EmailService;
 using Refit;
 using Web.Components;
 using Web.Interfaces;
@@ -11,12 +12,28 @@ builder.Services.AddRazorComponents()
 
 builder.Services.AddControllers();
 
-builder.Services.AddScoped<ArticlesService>();
-
 builder.Services.AddMediatR(x=> x.RegisterServicesFromAssemblyContaining<Program>());
 
-builder.Services.AddRefitClient<IArticlesApi>()
-    .ConfigureHttpClient(c => c.BaseAddress = new Uri("http://localhost:6000")); // Укажите URL вашего API
+var refitSettings = new RefitSettings
+{
+    ExceptionFactory = async response =>
+    {
+        if (!response.IsSuccessStatusCode)
+        {
+            var content = await response.Content.ReadAsStringAsync();
+            return new Exception($"API Error: {content}");
+        }
+        return null;
+    }
+};
+
+builder.Services.AddTransient<LoggingHandler>();
+builder.Services
+    .AddRefitClient<IArticlesApi>(refitSettings)
+    .ConfigureHttpClient(c => c.BaseAddress = new Uri("https://localhost:6001"))
+    .AddHttpMessageHandler<LoggingHandler>();
+
+builder.Services.AddEmailService(builder.Configuration);
 
 var app = builder.Build();
 

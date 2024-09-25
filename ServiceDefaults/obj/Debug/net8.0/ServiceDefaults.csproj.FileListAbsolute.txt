@@ -11,7 +11,6 @@ G:\DotNetProjects\14LaveN.Blog\ServiceDefaults\bin\Debug\net8.0\Domain.dll
 G:\DotNetProjects\14LaveN.Blog\ServiceDefaults\bin\Debug\net8.0\Application.pdb
 G:\DotNetProjects\14LaveN.Blog\ServiceDefaults\bin\Debug\net8.0\Domain.pdb
 G:\DotNetProjects\14LaveN.Blog\ServiceDefaults\obj\Debug\net8.0\ServiceDefaults.sourcelink.json
-G:\DotNetProjects\14LaveN.Blog\ServiceDefaults\obj\Debug\net8.0\ServiceDefaults.csproj.CopyComplete
 G:\DotNetProjects\14LaveN.Blog\ServiceDefaults\obj\Debug\net8.0\ServiceDefaults.dll
 G:\DotNetProjects\14LaveN.Blog\ServiceDefaults\obj\Debug\net8.0\refint\ServiceDefaults.dll
 G:\DotNetProjects\14LaveN.Blog\ServiceDefaults\obj\Debug\net8.0\ServiceDefaults.pdb
@@ -34,3 +33,4 @@ C:\Programming\DotNetProjects\14LaveN.Blog\ServiceDefaults\obj\Debug\net8.0\Serv
 C:\Programming\DotNetProjects\14LaveN.Blog\ServiceDefaults\obj\Debug\net8.0\refint\ServiceDefaults.dll
 C:\Programming\DotNetProjects\14LaveN.Blog\ServiceDefaults\obj\Debug\net8.0\ServiceDefaults.pdb
 C:\Programming\DotNetProjects\14LaveN.Blog\ServiceDefaults\obj\Debug\net8.0\ref\ServiceDefaults.dll
+G:\DotNetProjects\14LaveN.Blog\ServiceDefaults\obj\Debug\net8.0\ServiceD.0EEDC248.Up2Date

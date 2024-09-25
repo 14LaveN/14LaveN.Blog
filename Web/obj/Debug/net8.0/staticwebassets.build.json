@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "VNY2r/picMlVRwBaIdo4QNS/+r0MKMYyqYRrt9EVnc0=",
+  "Hash": "aBNzKzayB/6irlTWU9HF48I1eSB6mWpyp778EejrIB4=",
   "Source": "Web",
   "BasePath": "_content/Web",
   "Mode": "Default",
@@ -124,6 +124,25 @@
       "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css.map"
     },
     {
+      "Identity": "G:\\DotNetProjects\\14LaveN.Blog\\Web\\wwwroot\\css\\articleStyles.css",
+      "SourceId": "Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "G:\\DotNetProjects\\14LaveN.Blog\\Web\\wwwroot\\",
+      "BasePath": "_content/Web",
+      "RelativePath": "css/articleStyles.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\articleStyles.css"
+    },
+    {
       "Identity": "G:\\DotNetProjects\\14LaveN.Blog\\Web\\wwwroot\\favicon.png",
       "SourceId": "Web",
       "SourceType": "Discovered",
@@ -141,6 +160,44 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.png"
+    },
+    {
+      "Identity": "G:\\DotNetProjects\\14LaveN.Blog\\Web\\wwwroot\\pictureRest.jpg",
+      "SourceId": "Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "G:\\DotNetProjects\\14LaveN.Blog\\Web\\wwwroot\\",
+      "BasePath": "_content/Web",
+      "RelativePath": "pictureRest.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\pictureRest.jpg"
+    },
+    {
+      "Identity": "G:\\DotNetProjects\\14LaveN.Blog\\Web\\wwwroot\\pictureRest2.jpg",
+      "SourceId": "Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "G:\\DotNetProjects\\14LaveN.Blog\\Web\\wwwroot\\",
+      "BasePath": "_content/Web",
+      "RelativePath": "pictureRest2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\pictureRest2.jpg"
     }
   ]
 }

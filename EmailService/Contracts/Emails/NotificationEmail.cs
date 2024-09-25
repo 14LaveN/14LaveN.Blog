@@ -11,7 +11,7 @@ public sealed class NotificationEmail
     /// <param name="emailTo">The email receiver.</param>
     /// <param name="subject">The email subject.</param>
     /// <param name="body">The email body.</param>
-    public NotificationEmail(string emailTo, string subject, string body)
+    public NotificationEmail(string? emailTo, string subject, string body)
     {
         EmailTo = emailTo;
         Subject = subject;
@@ -21,7 +21,7 @@ public sealed class NotificationEmail
     /// <summary>
     /// Gets the email receiver.
     /// </summary>
-    public string EmailTo { get; }
+    public string? EmailTo { get; }
         
     /// <summary>
     /// Gets the email subject.

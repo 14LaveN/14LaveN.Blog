@@ -16,7 +16,7 @@ public static class MiddlewareExtensions
         app
             .UseMiddleware<IdempotentRequestMiddleware>()
             .UseMiddleware<RequestLoggingMiddleware>(logger)
-            .UseMiddleware<ResponseCachingMiddleware>()
+            //TODO .UseMiddleware<ResponseCachingMiddleware>()
             .UseMiddleware<LogContextEnrichmentMiddleware>();
 
         return app;

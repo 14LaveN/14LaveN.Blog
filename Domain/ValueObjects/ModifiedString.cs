@@ -13,7 +13,7 @@ public sealed class ModifiedString : ValueObject
     /// <summary>
     /// The name maximum length.
     /// </summary>
-    public const int MaxLength = 512;
+    public const int MaxLength = 15000;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="ModifiedString"/> class.

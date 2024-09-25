@@ -17,8 +17,20 @@
       "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
     },
     {
+      "Id": "G:\\DotNetProjects\\14LaveN.Blog\\Web\\wwwroot\\css\\articleStyles.css",
+      "PackagePath": "staticwebassets\\css\\articleStyles.css"
+    },
+    {
       "Id": "G:\\DotNetProjects\\14LaveN.Blog\\Web\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "G:\\DotNetProjects\\14LaveN.Blog\\Web\\wwwroot\\pictureRest.jpg",
+      "PackagePath": "staticwebassets\\pictureRest.jpg"
+    },
+    {
+      "Id": "G:\\DotNetProjects\\14LaveN.Blog\\Web\\wwwroot\\pictureRest2.jpg",
+      "PackagePath": "staticwebassets\\pictureRest2.jpg"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Web.Microsoft.AspNetCore.StaticWebAssets.props",

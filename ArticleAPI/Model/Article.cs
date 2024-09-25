@@ -1,3 +1,4 @@
+using System.ComponentModel.DataAnnotations.Schema;
 using Domain.Common.Core.Errors;
 using Domain.Common.Core.Primitives;
 using Domain.Core.Primitives;
@@ -15,16 +16,22 @@ public sealed class Article
     private Article(
         stringMod title,
         stringMod description,
-        Ulid authorId)
+        stringMod pictureLink,
+        Ulid authorId,
+        stringMod content)
     {
         Ensure.NotEmpty(title, "Title is required.", nameof(title));
         Ensure.NotEmpty(description, "Description is required.", nameof(description));
         Ensure.NotEmpty(authorId, "Author identifier is required.", nameof(authorId));
+        Ensure.NotEmpty(pictureLink, "Picture link is required", nameof(pictureLink));
+        Ensure.NotEmpty(content, "Content is required", nameof(content));
         
         Title = title;
+        Content = content;
+        Picture_Link = pictureLink;
         AuthorId = authorId;
         Description = description;
-        CreatedAt = DateTime.UtcNow;
+        Created_At = DateTime.UtcNow;
     }
 
     public Article()
@@ -36,12 +43,14 @@ public sealed class Article
     public static Result<Article> Create(
         stringMod title,
         stringMod description,
+        stringMod pictureLink,
+        stringMod content, 
         Ulid authorId)
     {
         if (authorId == Ulid.Empty)
             return Result.Failure<Article>(DomainErrors.Ulid.IsEmpty);
         
-        Article article = new Article(title, description, authorId);
+        Article article = new Article(title, description, pictureLink, authorId, content);
 
         return Result.Success(article);
     }
@@ -75,12 +84,16 @@ public sealed class Article
     #region Properties.
 
     public stringMod Title { get; private set; }
+
+    public stringMod Content { get; private set; }
     public stringMod Description { get; private set; }
+    
+    public stringMod Picture_Link { get; private set; }
 
     public stringMod AuthorName { get; private set; } = "fdsfdsfsdf";
     public Ulid AuthorId { get; private set; }
-
-    public DateTime CreatedAt { get; init; }
+    
+    public DateTime Created_At { get; init; }
 
     public DateTime ModifiedAt { get; private set; } = default;
 

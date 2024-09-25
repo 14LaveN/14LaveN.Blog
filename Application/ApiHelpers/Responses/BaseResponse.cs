@@ -15,7 +15,7 @@ public class BaseResponse<T> : IBaseResponse<T>
     public required string Description { get; set; }
 
     /// <inheritdoc />
-    public Result<T> Data { get; set; }
+    public Result Data { get; set; }
 
     /// <inheritdoc />
     public required HttpStatusCode StatusCode { get; set; }

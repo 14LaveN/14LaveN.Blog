@@ -11,7 +11,7 @@
         /// <param name="emailTo">The email receiver.</param>
         /// <param name="subject">The subject.</param>
         /// <param name="body">The body.</param>
-        public MailRequest(string emailTo, string subject, string body)
+        public MailRequest(string? emailTo, string subject, string body)
         {
             EmailTo = emailTo;
             Subject = subject;
@@ -21,7 +21,7 @@
         /// <summary>
         /// Gets the email receiver.
         /// </summary>
-        public string EmailTo { get; }
+        public string? EmailTo { get; }
 
         /// <summary>
         /// Gets the subject.

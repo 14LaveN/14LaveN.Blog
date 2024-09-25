@@ -23,7 +23,9 @@ public static class MediatrExtensions
                 .RegisterServicesFromAssemblies(typeof(Delete.Command).Assembly,
                     typeof(Delete.CommandHandler).Assembly)
                 .RegisterServicesFromAssemblies(typeof(GetAllArticles.Query).Assembly,
-                    typeof(GetAllArticles.QueryHandler).Assembly);
+                    typeof(GetAllArticles.QueryHandler).Assembly)
+                .RegisterServicesFromAssemblies(typeof(GetById.Query).Assembly,
+                    typeof(GetById.QueryHandler).Assembly);
             
             x.AddOpenBehavior(typeof(QueryCachingBehavior<,>))
                 //TODO .AddOpenBehavior(typeof(IdentityIdempotentCommandPipelineBehavior<,>))

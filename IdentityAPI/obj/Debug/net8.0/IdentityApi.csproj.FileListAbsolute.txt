@@ -126,9 +126,7 @@ G:\DotNetProjects\14LaveN.Blog\IdentityApi\bin\Debug\net8.0\System.Composition.C
 G:\DotNetProjects\14LaveN.Blog\IdentityApi\bin\Debug\net8.0\System.Composition.Hosting.dll
 G:\DotNetProjects\14LaveN.Blog\IdentityApi\bin\Debug\net8.0\System.Composition.Runtime.dll
 G:\DotNetProjects\14LaveN.Blog\IdentityApi\bin\Debug\net8.0\System.Composition.TypedParts.dll
-G:\DotNetProjects\14LaveN.Blog\IdentityApi\bin\Debug\net8.0\System.Formats.Asn1.dll
 G:\DotNetProjects\14LaveN.Blog\IdentityApi\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
-G:\DotNetProjects\14LaveN.Blog\IdentityApi\bin\Debug\net8.0\System.Text.Json.dll
 G:\DotNetProjects\14LaveN.Blog\IdentityApi\bin\Debug\net8.0\Ulid.dll
 G:\DotNetProjects\14LaveN.Blog\IdentityApi\bin\Debug\net8.0\ZstdSharp.dll
 G:\DotNetProjects\14LaveN.Blog\IdentityApi\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
@@ -293,7 +291,6 @@ G:\DotNetProjects\14LaveN.Blog\IdentityApi\obj\Debug\net8.0\scopedcss\Components
 G:\DotNetProjects\14LaveN.Blog\IdentityApi\obj\Debug\net8.0\scopedcss\Components\Layout\NavMenu.razor.rz.scp.css
 G:\DotNetProjects\14LaveN.Blog\IdentityApi\obj\Debug\net8.0\scopedcss\bundle\IdentityApi.styles.css
 G:\DotNetProjects\14LaveN.Blog\IdentityApi\obj\Debug\net8.0\scopedcss\projectbundle\IdentityApi.bundle.scp.css
-G:\DotNetProjects\14LaveN.Blog\IdentityApi\obj\Debug\net8.0\IdentityApi.csproj.CopyComplete
 G:\DotNetProjects\14LaveN.Blog\IdentityApi\obj\Debug\net8.0\IdentityApi.dll
 G:\DotNetProjects\14LaveN.Blog\IdentityApi\obj\Debug\net8.0\refint\IdentityApi.dll
 G:\DotNetProjects\14LaveN.Blog\IdentityApi\obj\Debug\net8.0\IdentityApi.pdb
@@ -302,3 +299,4 @@ G:\DotNetProjects\14LaveN.Blog\IdentityApi\obj\Debug\net8.0\ref\IdentityApi.dll
 G:\DotNetProjects\14LaveN.Blog\IdentityApi\bin\Debug\net8.0\IdentityApi.xml
 G:\DotNetProjects\14LaveN.Blog\IdentityApi\obj\Debug\net8.0\IdentityApi.xml
 G:\DotNetProjects\14LaveN.Blog\IdentityApi\bin\Debug\net8.0\Auth0.AspNetCore.Authentication.dll
+G:\DotNetProjects\14LaveN.Blog\IdentityApi\obj\Debug\net8.0\Identity.9C37E77D.Up2Date

@@ -1,4 +1,6 @@
-﻿namespace Domain.Common.Core.Primitives.Maybe;
+﻿using System.Text.Json.Serialization;
+
+namespace Domain.Common.Core.Primitives.Maybe;
 
 /// <summary>
 /// Represents a wrapper around a value that may or may not be null.

@@ -12,9 +12,9 @@ G:\DotNetProjects\14LaveN.Blog\BackgroundTasks\obj\Debug\net8.0\BackgroundTasks.
 G:\DotNetProjects\14LaveN.Blog\BackgroundTasks\obj\Debug\net8.0\BackgroundTasks.AssemblyInfoInputs.cache
 G:\DotNetProjects\14LaveN.Blog\BackgroundTasks\obj\Debug\net8.0\BackgroundTasks.AssemblyInfo.cs
 G:\DotNetProjects\14LaveN.Blog\BackgroundTasks\obj\Debug\net8.0\BackgroundTasks.csproj.CoreCompileInputs.cache
-G:\DotNetProjects\14LaveN.Blog\BackgroundTasks\obj\Debug\net8.0\BackgroundTasks.csproj.CopyComplete
 G:\DotNetProjects\14LaveN.Blog\BackgroundTasks\obj\Debug\net8.0\BackgroundTasks.dll
 G:\DotNetProjects\14LaveN.Blog\BackgroundTasks\obj\Debug\net8.0\refint\BackgroundTasks.dll
 G:\DotNetProjects\14LaveN.Blog\BackgroundTasks\obj\Debug\net8.0\BackgroundTasks.pdb
 G:\DotNetProjects\14LaveN.Blog\BackgroundTasks\obj\Debug\net8.0\ref\BackgroundTasks.dll
 G:\DotNetProjects\14LaveN.Blog\BackgroundTasks\obj\Debug\net8.0\BackgroundTasks.sourcelink.json
+G:\DotNetProjects\14LaveN.Blog\BackgroundTasks\obj\Debug\net8.0\Backgrou.BDE801A8.Up2Date

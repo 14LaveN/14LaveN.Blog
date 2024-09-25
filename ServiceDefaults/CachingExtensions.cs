@@ -16,11 +16,11 @@ public static class CachingExtensions
         IServiceCollection services = builder.Services;
 
         services
-            .AddResponseCaching(options =>
-            {
-                options.UseCaseSensitivePaths = false;
-                options.MaximumBodySize = 1024;
-            })
+            //TODO .AddResponseCaching(options =>
+            //TODO {
+            //TODO     options.UseCaseSensitivePaths = false;
+            //TODO     options.MaximumBodySize = 1024;
+            //TODO })
             .AddMemoryCache(options =>
             {
                 options.TrackLinkedCacheEntries = true;
